@@ -35,8 +35,17 @@ h2 {
 }
 
 .disclaimer {
-  font-size: 15px;
+  font-size: 16px;
   font-style: italic;
+}
+
+.year-wrapper {
+  margin-bottom: 5px;
+}
+
+.date-wrapper {
+  font-size: 16px;
+  color: #f3fe58;
 }
 
 footer {
