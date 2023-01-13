@@ -1,0 +1,15 @@
+
+@media screen and (min-width: 32.5em) {
+
+  .design-principles {
+    grid-template-columns: repeat(2, 1fr);
+    width: 95%;
+    row-gap: 50px;
+    column-gap: 18px;
+  }
+
+  .title {
+    text-align: left;
+  }
+
+}

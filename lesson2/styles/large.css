@@ -1,0 +1,11 @@
+
+@media screen and (min-width: 62em) {
+
+  .design-principles {
+    grid-template-columns: repeat(3, 1fr);
+    width: 90%;
+    row-gap: 50px;
+    column-gap: 20px;
+  }
+
+}
