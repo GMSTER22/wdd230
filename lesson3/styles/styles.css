@@ -1,0 +1,208 @@
+
+:root {
+  --primary-color: #0071a8;  
+  --secondary-color: #ededed;
+  --accent1-color: #faf219;
+  --accent2-color: #000000;
+  --accent3-color: #ffffff;
+
+  --heading-font: 'Patua One', cursive;
+  --paragraph-font: 'EB Garamond', serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: var(--paragraph-font);
+  font-weight: 500;
+}
+
+.container {
+  width: 95%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--heading-font);
+  margin: 35px 0;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  margin-bottom: 20px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+p::selection {
+  background-color: var(--primary-color);
+  color: var(--accent3-color);
+}
+
+.logo {
+  max-width: 300px;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header, footer {
+  padding: 30px 0;
+  background-color: var(--primary-color);
+}
+
+.logo {
+  width: 180px;
+  height: 180px;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  margin: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav a {
+  color: var(--accent3-color);
+  font-weight: 600;
+}
+
+nav a:hover {
+  border-bottom: 3px solid var(--accent1-color);
+  transition: border-bottom .1s;
+}
+
+.site-purpose,
+.logo-wrapper {
+  margin-bottom: 30px;
+}
+
+.logo-wrapper img {
+  margin: 0 auto;
+  box-shadow: 3px 3px 4px var(--accent2-color);
+}
+
+footer {
+  color: var(--accent3-color);
+  text-align: center;
+}
+
+
+/* target audience specific sytles */
+
+.audience, .personas, .scenarios {
+  margin-bottom: 30px;
+}
+
+.personas__wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 25px;
+  width: 100%;
+}
+
+.persona {
+  flex: 1 1 auto;
+  max-width: 350px;
+  margin: 0 auto;
+  box-shadow: 3px 3px 5px var(--accent2-color);
+}
+
+.persona__content {
+  padding: 20px;
+}
+
+.scenarios p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.scenario span {
+  font-weight: 700;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+/* Style guide specific sytles */
+
+.colors, .typography {
+  margin-bottom: 30px;
+}
+
+.colors table {
+  margin: 8px 0;
+}
+
+.colors table {
+  width: 100%;
+  margin: 10px 0;
+  font-size: clamp( 10px, 14px, 16px );
+  text-align: center;
+}
+
+.colors table th {
+  background-color: var(--accent2-color);
+  color: white;
+}
+
+.colors table th, .colors table td {
+  width: 20%;
+  padding: 5px 1px;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: var(--accent3-color);
+}
+
+.secondary {
+  background-color: var(--secondary-color);
+  color:  var(--accent2-color);
+}
+
+.accent1 {
+  background-color: var(--accent1-color);
+  color:  var(--accent2-color);
+}
+
+.accent2 {
+  background-color: var(--accent2-color);
+  color:  var(--accent3-color);
+}
+
+.accent3 {
+  background-color: var(--accent3-color);
+  color:  var(--accent2-color);
+}
+
+.typography__paragraph {
+  margin-bottom: 28px;
+}
+
+.typography__colored-paragraph {
+  margin-top: 10px;
+  padding: 20px;
+  background-color: var(--secondary-color);
+}

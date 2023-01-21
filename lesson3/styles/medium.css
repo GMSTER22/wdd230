@@ -1,0 +1,18 @@
+
+@media screen and (min-width: 768px) {
+  
+  header .container {
+    flex-direction: row;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  /* target audience section */
+
+  .personas__wrapper {
+    flex-direction: row;
+  }
+
+}
