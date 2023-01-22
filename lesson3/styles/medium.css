@@ -9,10 +9,13 @@
     display: flex;
   }
 
-  /* target audience section */
-
   .personas__wrapper {
     flex-direction: row;
+  }
+
+  main .container {
+    max-width: 800px;
+    margin: 0 auto;
   }
 
 }
