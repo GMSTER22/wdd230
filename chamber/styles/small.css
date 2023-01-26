@@ -1,0 +1,98 @@
+
+:root {
+  --primary-color: #0071a8;  
+  --secondary-color: #ededed;
+  --accent1-color: #faf219;
+  --accent2-color: #000000;
+  --accent3-color: #ffffff;
+
+  --heading-font: 'Patua One', cursive;
+  --paragraph-font: 'EB Garamond', serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: var(--paragraph-font);
+  font-weight: 500;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.logo__image {
+  max-width: 100px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header, footer {
+  padding: 20px;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  display: none;
+}
+
+main {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat( 5, auto );
+  gap: 10px;
+  margin: 20px 0;
+}
+
+section {
+  min-height: 250px;
+}
+
+section, .spotlights {
+  background-color: var(--accent1-color);
+}
+
+section, .spotlights {
+  padding: 15px;
+}
+
+section.join, section.spotlight-3 {
+  display: none;
+}
+
+[class^="spotlight-"] {
+  border: 1px solid var(--accent2-color);
+}
+
+.event {
+  grid-row: 2/3;
+}
+
+.weather {
+  grid-row: 3/4;
+}
