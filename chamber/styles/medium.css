@@ -1,26 +1,87 @@
 
 @media screen and ( min-width: 48em ) {
+
+  .nav-info {
+    column-gap: 150px;
+  }  
   
   main {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, minmax(150px, 250px));
+    grid-template-columns: 3fr 2fr;
   }
 
-  section.weather, section.join {
+  .weather, .join {
     display: block;
   }
 
-  section.hero {
+  .hero {
     grid-column: span 2;
   }
 
-  section.news {
+  .news {
     grid-column: span 2;
   }
 
-  section.spotlight-3 {
-    display: none;
+  .join {
+    display: block;
+  }
+
+  .spotlights {
+    grid-column: span 2;
+    display: flex;
+    column-gap: 10px;
+  }
+
+  [class^="spotlight-"] {
+    min-width: 50%;
+  }
+
+  .event {
+    grid-row: auto;
+  }
+  
+  .weather {
+    grid-row: auto;
+  }
+
+  .join {
+    grid-row: 4/5;
+    grid-column: 1/3;
+  }
+
+  .footer__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin-right: 15px;
+  }
+  
+  .footer__physical-address {
+    display: flex;
+    align-items: center;
+    text-align: left;
+  }
+
+  .footer__online-address span {
+    margin-bottom: 0px;
+  }
+
+  .footer__signature {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .footer__signature div {
+    min-width: fit-content;
+    padding: 0 10px;
+  }
+
+  .footer__signature div:not(:last-of-type) {
+    border-right: 1px solid var(--secondary-color);
   }
 
 }

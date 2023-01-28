@@ -19,6 +19,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Patua+One&display=swap" rel="stylesheet">
+
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -36,34 +39,48 @@
 
         <ul>
 
-          <li><a href="#">Discover</a></li>
-          <li><a href="#">Directory</a></li>
-          <li><a href="#">Join</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a class="active" href="#">Discover</a></li>
+          <li><a href="./directory.html">Directory</a></li>
+          <li><a href="./join.html">Join</a></li>
+          <li><a href="./contact.html">Contact</a></li>
 
         </ul>
 
+        <i id="close-button" class="fa-solid fa-xmark"></i>
+
       </nav>
 
-      <div class="social-media">
+      <div class="nav-info">
 
-        <a href="facebook.com">fb</a>
+        <div class="social-media">
 
-        <a href="linkedin.com">lind</a>
+          <a href="facebook.com">
+
+            <i class="fa-brands fa-facebook"></i>
+
+          </a>
+  
+          <a href="linkedin.com">
+
+            <i class="fa-brands fa-linkedin"></i>
+
+          </a>
+  
+        </div>
+  
+        <button class="nav-menu">
+          
+          <i class="fa-solid fa-bars"></i>
+        
+        </button>
 
       </div>
-
-      <button>
-        
-        &#9776;
-      
-      </button>
 
     </div>
 
     <div class="nav-date">
 
-      <span id="date">Monday, 22 November 2022</span>
+      <span id="nav-date">Monday, 22 November 2022</span>
 
     </div>
 
@@ -127,9 +144,71 @@
 
   <footer>
 
+    <div class="footer__info">
 
+      <div class="footer__physical-address">
+
+        <img class="footer__logo" src="./images/logo.png" alt="Ouagadougou Chamber of Commerce logo">
+
+        <address>
+          <strong>Ouagadougou Chamber of Commerce</strong> <br>
+          10 Rue De La Paix <br>
+          Ouagadougou, Burkina Faso
+        </address>
+
+      </div>
+
+      <div class="footer__online-address">
+
+        <address>
+          <span>info@Ouagacc.org</span>
+          <span>+(226) 36-26-94</span>
+          <span>
+
+            <i class="fa-solid fa-location-pin"></i>
+
+            <a href="https://goo.gl/maps/VXc6QKSfyvCK1GUA7" target="_blank">Location Map</a>
+          
+          </span>
+
+        </address>
+
+      </div>
+
+    </div>
+
+    <hr class="footer-hr">
+
+    <div class="footer__signature">
+
+      <div>
+
+        &copy; <span id="year">2020</span> Ouagadougou Chamber
+
+      </div>
+      
+      <div>
+
+        <strong>Souleymane Gael Nongnogo</strong>
+
+      </div>
+      
+      <div>
+
+        WDD 230 Project
+
+      </div>
+
+      <div>
+
+        Last Modification: <span id="footer-date">11/22/2021 06:20:28</span>
+
+      </div>
+
+    </div>
 
   </footer>
   
+  <script src="./scripts/scripts.js"></script>
 </body>
 </html>
