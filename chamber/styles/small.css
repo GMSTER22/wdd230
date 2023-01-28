@@ -181,7 +181,7 @@ footer {
 
 .footer__logo {
   max-width: 100px;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 .footer__physical-address {
