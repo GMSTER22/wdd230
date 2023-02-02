@@ -20,7 +20,7 @@ button.addEventListener( 'click', () => {
   const listBtn = document.createElement( 'button' );
 
   listText.textContent = newChapter;
-  listBtn.textContent = 'X';
+  listBtn.textContent = '❌';
   listBtn.classList.add( 'delete' );
 
   listItem.append( listText, listBtn );

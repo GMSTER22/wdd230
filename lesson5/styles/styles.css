@@ -14,15 +14,25 @@ body {
 
 h1 {
 	font-size: 1.5rem;
+	font-weight: bold;
 }
 
 main {
+	min-width: 320px;
 	margin: 1rem auto;
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 1rem;
-	background-color: #ddd;
+	background-color: #bed;
+}
+
+.input-wrapper {
 	display: flex;
 	flex-direction: column;
+}
+
+label {
+	text-align: center;
+	margin-bottom: 5px;
 }
 
 input,
@@ -36,7 +46,6 @@ button {
 
 .delete {
 	width: fit-content;
-  color: red;
   font-weight: bold;
 }
 
@@ -51,7 +60,13 @@ button {
 
 ul {
 	margin: 1rem;
+	padding: 1.5rem;
 	list-style: none;
+	border: 1px solid #bbb;
+}
+
+ul:empty {
+	display: none;
 }
 
 li {
@@ -65,7 +80,13 @@ li {
 		font-size: 2rem;
 	}
 
-	main {
-		width: 320px;
+	/* main {
+		min-width: 320px;
+	} */
+
+	.input-wrapper {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
 	}
 }
