@@ -123,6 +123,7 @@ header {
 .fa-xmark {
   width: 30px;
   height: 30px;
+  fill: var(--secondary-color);
 }
 
 .fa-brands:hover {

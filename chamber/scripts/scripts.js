@@ -26,9 +26,7 @@ const closeNavButtonElement = document.querySelector( '#close-button' );
 
 buttonElement.addEventListener( 'click', () => {
 
-  let isNavOpen = Array.from(navElement.classList).includes('nav-open');
-
-  console.log(isNavOpen);
+  let isNavOpen = navElement.classList.contains('.nav-open');
 
   navElement.classList.toggle( 'nav-open', ! isNavOpen );
 
