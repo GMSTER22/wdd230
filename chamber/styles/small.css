@@ -37,7 +37,6 @@ img {
   max-width: 100px;
 }
 
-
 nav.nav-open {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.952);
@@ -74,21 +73,6 @@ nav a:hover {
 
 nav a.active {
   border-bottom: 2px solid var(--accent1-color);
-  /* color: var(--accent1-color); */
-}
-
-.nav-menu {
-  background-color: transparent;
-  color: var(--secondary-color);
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-}
-
-.nav-menu i,
-.social-media i,
-nav i {
-  font-size: 30px;
 }
 
 #close-button {
@@ -120,7 +104,11 @@ header {
 .nav-info {
   display: flex;
   align-items: center;
-  column-gap: 15px;
+  column-gap: 30px;
+}
+
+.social-media a:not(:last-of-type) {
+  margin-right: 5px;
 }
 
 .nav-date {
@@ -130,16 +118,35 @@ header {
   text-align: center;
 }
 
-.social-media a {
-  color: var(--secondary-color);
+.fa-brands,
+.fa-menu,
+.fa-xmark {
+  width: 30px;
+  height: 30px;
 }
 
-.social-media a:not(:last-child) {
-  margin-right: 8px;
+.fa-brands:hover {
+  fill: var(--accent1-color);
 }
 
-.social-media a:hover {
-  color: var(--accent1-color);
+.nav-menu,
+#close-button {
+  background-color: transparent;
+  border: none;
+}
+
+#close-button .fa-xmark {
+  cursor: pointer;
+  fill: var(--accent3-color);
+}
+
+.nav-menu:hover {
+  cursor: pointer;
+}
+
+.fa-menu:hover, 
+#close-button:hover .fa-xmark {
+  fill: var(--accent1-color);
 }
 
 main {
@@ -201,9 +208,6 @@ footer {
   margin: 10px 0;
 }
 
-
 .footer__signature div:not(:last-of-type) {
-
   margin-bottom: 5px;
-
 }
