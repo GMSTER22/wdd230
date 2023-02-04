@@ -15,7 +15,7 @@ document.querySelector('#footer-date').textContent = date.toLocaleString('en-GB'
 
 //Banner
 
-let numericWeekday = date.getDay();
+const numericWeekday = date.getDay();
 const bannerElement = document.querySelector( '#banner' );
 
 if ( numericWeekday === 1 || numericWeekday === 2 ) {

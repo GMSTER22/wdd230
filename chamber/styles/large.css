@@ -16,7 +16,7 @@
 
   nav {
     position: relative;
-    top: 0;
+    top: 0 !important;
     left: 0;
     width: auto;
     background-color: transparent;
