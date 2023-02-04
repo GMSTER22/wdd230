@@ -1,9 +1,25 @@
 
 @media screen and ( min-width: 48em ) {
 
+  .header-wrapper, footer {
+    padding: 20px;
+  }
+
+  .logo__image {
+    max-width: 100px;
+  }
+
+  .logo__text span:first-child {
+    font-size: 30px;
+  }
+
+  /* nav {
+    top: 188.39px;
+  } */
+
   .nav-info {
     column-gap: 150px;
-  }  
+  }
   
   main {
     display: grid;
