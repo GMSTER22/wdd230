@@ -121,11 +121,11 @@ a {
   text-decoration: none;
 }
 
-.header-wrapper, footer {
+.header-wrapper, .footer__wrapper {
   padding: 30px 15px;
 }
 
-.header-wrapper {
+header {
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -347,6 +347,9 @@ section, .spotlights, .join {
 footer {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+}
+
+.footer__wrapper {
   padding: 20px;
   text-align: center;
 }

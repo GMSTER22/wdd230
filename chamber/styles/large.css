@@ -1,9 +1,9 @@
 @media screen and ( min-width: 62em ) {
 
-  #banner,
+  #banner p,
   .header-wrapper, 
   main, 
-  footer {
+  .footer__wrapper {
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
