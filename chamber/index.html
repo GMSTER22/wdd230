@@ -121,7 +121,16 @@
 
     <section class="hero">
 
-      <img class="hero__image" src="./images/ouagadougou.jpg" alt="Ouagadougou fiction image">
+      <!-- <img class="hero__image" src="./images/ouagadougou.jpg" alt="Ouagadougou fiction image"> -->
+
+      <img class="hero__image"
+          srcset="./images/temporary/wdd230-600.jpg 600w,
+                  ./images/temporary/wdd230-900.jpg 900w,
+                  ./images/temporary/wdd230-1100.jpg 1100w"
+          sizes="(max-width: 600px) 600px,
+                 (max-width: 1024px) 1100px,
+                 900px"
+          src="./images/temporary/wdd230-default.jpg" alt="Ouagadougou fiction image">
 
       <div class="hero__text">
 

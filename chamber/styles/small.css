@@ -201,13 +201,13 @@ section, .spotlights, .join {
 }
 
 .spotlights img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin: 0 auto 10px auto;
 }
 
 .spotlights hr {
-  margin: 15px 0;
+  margin: 5px 0;
 }
 
 .spotlights__address a {
