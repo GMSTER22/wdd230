@@ -2,17 +2,21 @@ const temperatureElement = document.querySelector( '#temperature' );
 const windSpeedElement = document.querySelector( '#wind-speed' );
 const windChillElement = document.querySelector( '#wind-chill' );
 
-let temperature = 35;
-let windSpeed = 5;
+let TEMPERATURE = 35;
+let WIND_SPEED = 5;
 
-temperatureElement.textContent = temperature;
-windSpeedElement.textContent = `${windSpeed} mph`;
+temperatureElement.textContent = TEMPERATURE;
+windSpeedElement.textContent = `${WIND_SPEED} mph`;
 
-if ( temperature <= 50 && windSpeed > 3 ) {
+if ( TEMPERATURE <= 50 && WIND_SPEED > 3 ) {
 
-  let windChill = windChillCalculator( temperature, windSpeed );
+  let windChill = windChillCalculator( TEMPERATURE, WIND_SPEED );
   
   windChillElement.textContent = windChill.toFixed(2);
+
+} else {
+
+  windChillElement.textContent = 'N/A';
 
 }
 
