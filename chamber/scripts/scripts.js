@@ -105,19 +105,13 @@ const lastVisit = () => localStorage.getItem( 'lastVisit' );
 
 if ( ! lastVisit() ) {
 
-  // console.log( 'This is your first visit here' );
-  document.querySelector('#nav-last-visit').textContent = `First Visit: welcome`;
+  document.querySelector('#nav-last-visit').textContent = `First Visit`;
 
 } else {
 
   const duration = date.getTime() - lastVisit();
 
   const days = Math.round( duration / 1000 / 60 / 60 / 24 );
-
-  // console.log( duration/1000, Math.round(duration/1000), 'seconds' );
-  // console.log( duration/1000/60, Math.round(duration/1000/60), 'minutes' );
-  // console.log( duration/1000/60/60, Math.round(duration/1000/60/60), 'hours' );
-  // console.log( duration/1000/60/60/24, Math.round(duration/1000/60/60/24), 'days' );
 
   document.querySelector('#nav-last-visit').textContent = `Last visit: ${ days } ${ days > 1 ? 'days' : 'day' } ago`;
 
