@@ -57,7 +57,7 @@ const loadImage = ( image ) => {
 
   image.setAttribute( 'src', image.dataset.src );
 
-  image.removeAttribute( 'data-src' );
+  image.addEventListener( 'load', e => image.removeAttribute( 'data-src' ) );
 
 }
 

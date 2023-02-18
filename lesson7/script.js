@@ -12,7 +12,7 @@ const loadImages = image => {
 }
 
 if ( "IntersectionObserver" in window ) {
-  console.log( 'working' )
+
   let observer = new IntersectionObserver( ( entries, observer ) => {
 
     entries.forEach( entry => {
@@ -27,7 +27,7 @@ if ( "IntersectionObserver" in window ) {
 
     } )
 
-  }, { threshold: 1 } );
+  }, { threshold: 0.25 } );
 
   images.forEach( image => {
 
@@ -36,7 +36,7 @@ if ( "IntersectionObserver" in window ) {
   } )
 
 } else {
-  console.log('not working')
+
   images.forEach( image => loadImages( image ) );
 
 }
