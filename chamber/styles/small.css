@@ -148,10 +148,13 @@ header {
 }
 
 .nav-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
   padding: 10px 0;
   background-color: var(--accent1-color);
   color: var(--accent2-color);
-  text-align: center;
 }
 
 .social-media {
@@ -179,7 +182,7 @@ header {
   cursor: pointer;
 }
 
-main {
+main.home {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat( 5, minmax(250px, auto) );
@@ -383,4 +386,28 @@ footer {
 
 .footer__signature div:not(:last-of-type) {
   margin-bottom: 5px;
+}
+
+
+/* Discover page styles */
+
+.discover {
+  margin: 25px 0;
+}
+
+.discover h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.discover__city section {
+  padding: 20px;
+}
+
+.discover__city section h2 {
+  margin-bottom: 10px;
+}
+
+.discover__city .image img {
+  height: 100%;
 }

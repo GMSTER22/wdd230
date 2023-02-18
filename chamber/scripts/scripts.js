@@ -7,7 +7,7 @@ const weekday = date.toLocaleDateString('en', { weekday: 'long' });
 const month = date.toLocaleDateString('en', { month: 'long' });
 const year = date.toLocaleDateString('en', { year: 'numeric' });
 
-document.querySelector('#nav-date').textContent = `${weekday}, ${day} ${month} ${year}`;
+document.querySelector('#nav-current-date').textContent = `${weekday}, ${day} ${month} ${year}`;
 
 document.querySelector('#year').textContent = date.getFullYear();
 
@@ -47,3 +47,80 @@ buttonElement.addEventListener( 'click', () => {
   navElement.classList.toggle( 'nav-open' );
 
 } );
+
+
+// Lazy loading images
+
+const imagesToLoad = document.querySelectorAll( '[data-src]' );
+
+const loadImage = ( image ) => {
+
+  image.setAttribute( 'src', image.dataset.src );
+
+  image.removeAttribute( 'data-src' );
+
+}
+
+const intersectionObserverOptions = {
+
+  threshold: 0.5
+
+}
+
+if ( 'IntersectionObserver' in window ) {
+
+  const intersectionObserver = new IntersectionObserver( onIntersectionObserver, intersectionObserverOptions );
+
+  imagesToLoad.forEach( image => {
+    
+    intersectionObserver.observe( image );
+
+  } );
+
+} else {
+
+  imagesToLoad.forEach( image => loadImage( image ) )
+
+}
+
+function onIntersectionObserver( entries, intersectionObserver ) {
+
+  entries.forEach( entry => {
+
+    if ( entry.isIntersecting ) {
+
+      loadImage( entry.target );
+
+      intersectionObserver.unobserve( entry.target );
+
+    }
+    
+  } );
+
+}
+
+// Time between user visits to the site
+
+const lastVisit = () => localStorage.getItem( 'lastVisit' );
+
+if ( ! lastVisit() ) {
+
+  // console.log( 'This is your first visit here' );
+  document.querySelector('#nav-last-visit').textContent = `First Visit: welcome`;
+
+} else {
+
+  const duration = date.getTime() - lastVisit();
+
+  const days = Math.round( duration / 1000 / 60 / 60 / 24 );
+
+  // console.log( duration/1000, Math.round(duration/1000), 'seconds' );
+  // console.log( duration/1000/60, Math.round(duration/1000/60), 'minutes' );
+  // console.log( duration/1000/60/60, Math.round(duration/1000/60/60), 'hours' );
+  // console.log( duration/1000/60/60/24, Math.round(duration/1000/60/60/24), 'days' );
+
+  document.querySelector('#nav-last-visit').textContent = `Last visit: ${ days } ${ days > 1 ? 'days' : 'day' } ago`;
+
+}
+
+localStorage.setItem( 'lastVisit', date.getTime() );
