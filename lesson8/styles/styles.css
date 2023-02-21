@@ -1,0 +1,49 @@
+
+table, th, td {
+  margin: 35px auto 0;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 10px;
+  font-size: 18px;
+
+}
+
+thead tr {
+  font-size: 25px;
+  background-color: rgb(0, 0, 124);
+  color: white;
+}
+
+thead th {
+  border: none;
+}
+
+thead tr:nth-child(2) :not(:first-child) {
+  background-color: blue;
+}
+
+tbody tr :first-child {
+  font-size: 18px;
+}
+
+tbody tr:nth-child(2) {
+  background: rgb(255, 224, 255);
+}
+
+tbody tr:nth-of-type(1) td,
+tbody tr:nth-child(2) :nth-child(3),
+tbody tr:nth-child(2) :nth-child(4),
+tbody tr:nth-child(3) :nth-child(4) {
+  font-size: 22px;
+  color: blue;
+  font-weight: bolder;
+}
+
+th, td {
+  padding: 15px 30px;
+  text-align: center;
+}
