@@ -411,3 +411,30 @@ footer {
 .discover__city .image img {
   height: 100%;
 }
+
+/* Join page styles */
+
+.join-page {
+  padding: 35px 10px;
+}
+
+.join-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.join-page label.top {
+  display: block;
+  margin: 15px 0;
+}
+
+.join-page label.sbs {
+  display: block;
+  margin: 10px 0;
+}
+
+.join-page label.top input,
+.join-page label.top textarea {
+  display: block;
+  width: 100%;
+}
