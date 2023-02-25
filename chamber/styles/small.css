@@ -418,13 +418,19 @@ footer {
   padding: 35px 0px;
 }
 
+.join-page__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  row-gap: 50px;
+}
+
 .join-page h1 {
   text-align: center;
   margin-bottom: 45px;
 }
 
 .join-page form fieldset {
-  border: 1px solid #979797;
+  border: none;
   border-radius: 8px;
 }
 
@@ -457,6 +463,10 @@ footer {
   font-size: 16px;
 }
 
+.join-page form label textarea {
+  resize: vertical;
+}
+
 .join-page form label.top {
   display: flex;
   flex-direction: column-reverse;
@@ -486,9 +496,9 @@ footer {
   width: 100%;
 }
 
-/* .join-page form label.top input::placeholder {
+.join-page form label.top input:not([type="email"])::placeholder {
   color: transparent;
-} */
+}
 
 .join-page form label.top input:required:not(:placeholder-shown):invalid {
   border-left: 8px solid red;
@@ -496,6 +506,17 @@ footer {
 
 .join-page form label.top input:required:valid {
   border-left: 8px solid green;
+}
+
+.join-page form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+}
+
+.join-page form #submissionDate {
+  display: none;
 }
 
 table.memberships {
@@ -506,20 +527,19 @@ table.memberships {
 }
 
 table.memberships, 
-table.memberships th, 
+table.memberships tbody th, 
 table.memberships td {
-  border: 1px solid black;
+  border-bottom: 1px solid var(--secondary-color);
 }
 
 table.memberships th,
 table.memberships th {
-  padding: 20px 0;
+  padding: 20px 2px;
 }
 
 table.memberships td .xmark,
 table.memberships td .checkmark {
   font-weight: bold;
-  font-size: 25px;
 }
 
 table.memberships td .xmark {
@@ -530,12 +550,34 @@ table.memberships td .checkmark {
   color: rgb(2, 172, 2);
 }
 
-table.memberships thead {
+table.memberships thead,
+table.memberships tfoot {
   background-color: var( --primary-color );
   color: var( --secondary-color );
 }
 
-table.memberships tfoot {
-  background-color: var( --accent1-color );
-  font-weight: bold;
+table.memberships tbody tr:nth-child(even) {
+  background-color: #0070a815;
+}
+
+/* Thank you page  */
+
+.thankyou-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  height: 50vh;
+}
+
+.thankyou-page h1 {
+  font-size: 50px;
+  letter-spacing: 5px;
+  color: var( --primary-color );
+  text-align: center;
+}
+
+.thankyou-page img {
+  max-width: 200px;
 }

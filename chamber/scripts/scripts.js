@@ -118,3 +118,10 @@ if ( ! lastVisit() ) {
 }
 
 localStorage.setItem( 'lastVisit', date.getTime() );
+
+
+// Setting value of the hidden
+
+const submissionInputElement = document.querySelector( '#submissionDate' );
+
+window.addEventListener( 'load', (event) => submissionInputElement.value = date.toISOString().substring(0,10) );

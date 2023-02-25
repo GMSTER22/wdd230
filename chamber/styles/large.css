@@ -5,6 +5,8 @@
   .header-wrapper, 
   main.home,
   main.discover,
+  main.join-page,
+  main.thankyou,
   .footer__wrapper {
     max-width: 1440px;
     margin-right: auto;
@@ -104,6 +106,36 @@
 
   .discover__city .image img:hover {
     transform: scale( 1.1 );
+  }
+
+  /* Join page styles */
+
+  .join-page__wrapper {
+    flex-direction: row;
+    column-gap: 50px;
+    align-items: start;
+  }
+
+  .join-page__wrapper form {
+    flex: 1 1 50%;
+  }
+
+  .join-page__wrapper table {
+    flex: 1 1 auto;    
+  }
+
+  .join-page table thead {
+    font-size: 20px;
+  }
+
+  .join-page table tfoot {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  table.memberships td .xmark,
+  table.memberships td .checkmark {
+    font-size: 20px;
   }
 
 }

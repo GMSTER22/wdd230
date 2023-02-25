@@ -124,200 +124,178 @@
 
     <h1>Join The Chamber</h1>
 
-    <form action="./thankyou.html" method="get">
+    <div class="join-page__wrapper">
 
-      <fieldset>
+      <form action="./thankyou.html" method="get">
 
-        <legend>Applicant Information</legend>
+        <fieldset>
 
-        <label class="top">        
-          <input type="text" name="fname" placeholder="First name" required> <span>First Name</span>
-        </label>      
+          <legend>Applicant Information</legend>
 
-        <label class="top">        
-          <input type="text" name="lname" placeholder="Last name" required> <span>Last Name</span>  
-        </label>
+          <label class="top">        
+            <input type="text" name="fname" placeholder="First name" required> <span>First Name</span>
+          </label>      
 
-        <label class="top">        
-          <input type="text" name="title" placeholder="Title" pattern="([A-Za-z\s-]){7,}" required> <span>Title</span>    
-        </label>
-
-        <label class="top">        
-          <input type="email" name="Email" placeholder="johndoe@gmail.com" required> <span>Email</span>   
-        </label>
-
-        <label class="top">        
-          <input type="tel" name="tel" placeholder="Phone" pattern="[0-9]{10}" required> <span>Phone</span>
-        </label>
-
-      </fieldset>
-
-      <fieldset>
-
-        <legend>Business Information</legend>
-
-        <label class="top">        
-          <input type="text" name="businessName" placeholder="Business name" required> <span>Business Name</span>      
-        </label>
-
-        <div class="memberships">
-          <span>Membership Level:</span>
-          <label class="sbs">
-            <input type="radio" name="membershipslevels" value="nonProfit"> <span>Non Profit</span> 
+          <label class="top">        
+            <input type="text" name="lname" placeholder="Last name" required> <span>Last Name</span>  
           </label>
 
-          <label class="sbs">
-            <input type="radio" name="membershipslevels" value="bronze"> <span>Bronze</span>
+          <label class="top">        
+            <input type="text" name="title" placeholder="Title" pattern="([A-Za-z\s-]){7,}"> <span>Title</span>    
           </label>
 
-          <label class="sbs">
-            <input type="radio" name="membershipslevels" value="silver"> <span>Silver</span>
+          <label class="top">        
+            <input type="email" name="Email" placeholder="johndoe@gmail.com" required> <span>Email</span>   
           </label>
 
-          <label class="sbs">
-            <input type="radio" name="membershipslevels" value="gold"> <span>Gold</span>
+          <label class="top">        
+            <input type="tel" name="tel" placeholder="Phone" pattern="[0-9]{10}" required> <span>Phone</span>
           </label>
-        </div>
 
-        <label class="top">
-          <textarea name="description"></textarea> <span>Business Description</span>
-        </label>
+        </fieldset>
 
-        <label>
-          <input type="date" name="submissionDate" value="">
-        </label>
+        <fieldset>
 
-      </fieldset>
+          <legend>Business Information</legend>
 
-      <input type="submit" value="Join Now">
-      
-    </form>
+          <label class="top">        
+            <input type="text" name="businessName" placeholder="Business name" required> <span>Business Name</span>      
+          </label>
 
-    <table class="memberships">
+          <div class="memberships">
+            <span>Membership Level:</span>
+            <label class="sbs">
+              <input type="radio" name="membershipslevels" value="nonProfit"> <span>Non Profit</span> 
+            </label>
 
-      <thead>
+            <label class="sbs">
+              <input type="radio" name="membershipslevels" value="bronze"> <span>Bronze</span>
+            </label>
 
-        <tr>
+            <label class="sbs">
+              <input type="radio" name="membershipslevels" value="silver"> <span>Silver</span>
+            </label>
 
-          <th></th>
+            <label class="sbs">
+              <input type="radio" name="membershipslevels" value="gold"> <span>Gold</span>
+            </label>
+          </div>
 
-          <th>Non-Profit</th>
+          <label class="top">
+            <textarea name="description"></textarea> <span>Business Description</span>
+          </label>
 
-          <th>Bronze</th>
+          <label>
+            <input id="submissionDate" type="date" name="submissionDate" value="">
+          </label>
 
-          <th>Silver</th>
+        </fieldset>
 
-          <th>Gold</th>
+        <input class="cta" type="submit" value="Join Now">
+        
+      </form>
 
-        </tr>
+      <table class="memberships">
 
-      </thead>
+        <thead>
 
-      <tbody>
+          <tr>
 
-        <tr>
+            <th>Benefits</th>
 
-          <th>Business Referals</th>
+            <th>Non-Profit</th>
 
-          <td><span class="checkmark">&#10004;</span></td>
+            <th>Bronze</th>
 
-          <td><span class="checkmark">&#10004;</span></td>
+            <th>Silver</th>
 
-          <td><span class="checkmark">&#10004;</span></td>
-          
-          <td><span class="checkmark">&#10004;</span></td>
+            <th>Gold</th>
 
-        </tr>
+          </tr>
 
-        <tr>
+        </thead>
 
-          <th>Courses/Training</th>
+        <tbody>
 
-          <td><span class="xmark">&#10008;</span></td>
+          <tr>
 
-          <td><span class="checkmark">&#10004;</span></td>
+            <th>Business Referals</th>
 
-          <td><span class="checkmark">&#10004;</span></td>
+            <td><span class="checkmark">&#10004;</span></td>
 
-          <td><span class="checkmark">&#10004;</span></td>
+            <td><span class="checkmark">&#10004;</span></td>
 
-        </tr>
+            <td><span class="checkmark">&#10004;</span></td>
+            
+            <td><span class="checkmark">&#10004;</span></td>
 
-        <tr>
+          </tr>
 
-          <th>Website Banner Ad</th>
+          <tr>
 
-          <td><span class="xmark">&#10008;</span></td>
+            <th>Courses/Training</th>
 
-          <td><span class="xmark">&#10008;</span></td>
+            <td><span class="xmark">&#10008;</span></td>
 
-          <td><span class="checkmark">&#10004;</span></td>
+            <td><span class="checkmark">&#10004;</span></td>
 
-          <td><span class="checkmark">&#10004;</span></td>
+            <td><span class="checkmark">&#10004;</span></td>
 
-        </tr>
+            <td><span class="checkmark">&#10004;</span></td>
 
-        <tr>
+          </tr>
 
-          <th>Ribbon Cuttings</th>
+          <tr>
 
-          <td><span class="xmark">&#10008;</span></td>
+            <th>Website Banner Ad</th>
 
-          <td><span class="xmark">&#10008;</span></td>
+            <td><span class="xmark">&#10008;</span></td>
 
-          <td><span class="xmark">&#10008;</span></td>
+            <td><span class="xmark">&#10008;</span></td>
 
-          <td><span class="checkmark">&#10004;</span></td>
+            <td><span class="checkmark">&#10004;</span></td>
 
-        </tr>
+            <td><span class="checkmark">&#10004;</span></td>
 
-      </tbody>
+          </tr>
 
-      <tfoot>
+          <tr>
 
-        <tr>
+            <th>Ribbon Cuttings</th>
 
-          <th>Cost (US dollars)</th>
+            <td><span class="xmark">&#10008;</span></td>
 
-          <td>FREE</td>
+            <td><span class="xmark">&#10008;</span></td>
 
-          <td>500</td>
+            <td><span class="xmark">&#10008;</span></td>
 
-          <td>1,000</td>
+            <td><span class="checkmark">&#10004;</span></td>
 
-          <td>2,000</td>
+          </tr>
 
-        </tr>
+        </tbody>
 
-      </tfoot>
+        <tfoot>
 
-    </table>
+          <tr>
 
-    <!-- <div class="memberships-levels">
+            <th>Cost (US dollars)</th>
 
-      <div class="memberships-card">
+            <td>FREE</td>
 
-        <div class="memberships-card__left">
+            <td>250</td>
 
-          <span>Non Profit</span>
+            <td>500</td>
 
-        </div>
+            <td>1,000</td>
 
-        <div class="memberships-card__right">
+          </tr>
 
-          <h2>Benefits</h2>
+        </tfoot>
 
-          <ul>
+      </table>
 
-            <li></li>
-
-          </ul>
-
-        </div>
-
-      </div>
-
-    </div> -->
+    </div>
 
   </main>
 
