@@ -415,26 +415,127 @@ footer {
 /* Join page styles */
 
 .join-page {
-  padding: 35px 10px;
+  padding: 35px 0px;
 }
 
 .join-page h1 {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 45px;
 }
 
-.join-page label.top {
+.join-page form fieldset {
+  border: 1px solid #979797;
+  border-radius: 8px;
+}
+
+.join-page form fieldset legend {
+  font-size: 22px;
+  padding: 0 10px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.join-page form fieldset:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.join-page form label.top span,
+.join-page form .memberships span:first-child {
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.join-page form .memberships span:first-child {
+  margin-bottom: 10px;
+}
+
+.join-page form label input,
+.join-page form label textarea {
+  border: 1px solid #979797;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.join-page form label.top {
+  display: flex;
+  flex-direction: column-reverse;
+  margin: 25px 0;
+}
+
+.join-page form label.top input:required ~ span::after {
+  content: "\002a";
+  font-weight: bold;
+  color: red;
+  margin-left: 3px;
+}
+
+.join-page form .memberships span {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.join-page form label.sbs {
   display: block;
-  margin: 15px 0;
+  margin-bottom: 10px;
 }
 
-.join-page label.sbs {
-  display: block;
-  margin: 10px 0;
-}
-
-.join-page label.top input,
-.join-page label.top textarea {
+.join-page form label.top input,
+.join-page form label.top textarea {
   display: block;
   width: 100%;
+}
+
+/* .join-page form label.top input::placeholder {
+  color: transparent;
+} */
+
+.join-page form label.top input:required:not(:placeholder-shown):invalid {
+  border-left: 8px solid red;
+}
+
+.join-page form label.top input:required:valid {
+  border-left: 8px solid green;
+}
+
+table.memberships {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  border-collapse: collapse;
+}
+
+table.memberships, 
+table.memberships th, 
+table.memberships td {
+  border: 1px solid black;
+}
+
+table.memberships th,
+table.memberships th {
+  padding: 20px 0;
+}
+
+table.memberships td .xmark,
+table.memberships td .checkmark {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+table.memberships td .xmark {
+  color: red;
+}
+
+table.memberships td .checkmark {
+  color: rgb(2, 172, 2);
+}
+
+table.memberships thead {
+  background-color: var( --primary-color );
+  color: var( --secondary-color );
+}
+
+table.memberships tfoot {
+  background-color: var( --accent1-color );
+  font-weight: bold;
 }

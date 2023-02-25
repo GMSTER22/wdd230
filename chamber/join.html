@@ -131,23 +131,23 @@
         <legend>Applicant Information</legend>
 
         <label class="top">        
-          First Name <input type="text" name="fname" required>
+          <input type="text" name="fname" placeholder="First name" required> <span>First Name</span>
         </label>      
 
         <label class="top">        
-          Last Name <input type="text" name="lname" required>      
+          <input type="text" name="lname" placeholder="Last name" required> <span>Last Name</span>  
         </label>
 
         <label class="top">        
-          Title <input type="text" name="title" pattern="([A-Za-z\s-]){7,}">      
+          <input type="text" name="title" placeholder="Title" pattern="([A-Za-z\s-]){7,}" required> <span>Title</span>    
         </label>
 
         <label class="top">        
-          Email <input type="email" name="Email" placeholder="johndoe@gmail.com" required>      
+          <input type="email" name="Email" placeholder="johndoe@gmail.com" required> <span>Email</span>   
         </label>
 
         <label class="top">        
-          Phone <input type="tel" name="tel" required>      
+          <input type="tel" name="tel" placeholder="Phone" pattern="[0-9]{10}" required> <span>Phone</span>
         </label>
 
       </fieldset>
@@ -157,28 +157,30 @@
         <legend>Business Information</legend>
 
         <label class="top">        
-          Business Name <input type="text" name="businessName" required>      
+          <input type="text" name="businessName" placeholder="Business name" required> <span>Business Name</span>      
         </label>
 
-        <div>Membership Levels</div>
-        <label class="sbs">
-          <input type="radio" name="membershipslevels" value="nonProfit"> Non Profit 
-        </label>
+        <div class="memberships">
+          <span>Membership Level:</span>
+          <label class="sbs">
+            <input type="radio" name="membershipslevels" value="nonProfit"> <span>Non Profit</span> 
+          </label>
 
-        <label class="sbs">
-          <input type="radio" name="membershipslevels" value="bronze"> Bronze
-        </label>
+          <label class="sbs">
+            <input type="radio" name="membershipslevels" value="bronze"> <span>Bronze</span>
+          </label>
 
-        <label class="sbs">
-          <input type="radio" name="membershipslevels" value="silver"> Silver
-        </label>
+          <label class="sbs">
+            <input type="radio" name="membershipslevels" value="silver"> <span>Silver</span>
+          </label>
 
-        <label class="sbs">
-          <input type="radio" name="membershipslevels" value="gold"> Gold
-        </label>
+          <label class="sbs">
+            <input type="radio" name="membershipslevels" value="gold"> <span>Gold</span>
+          </label>
+        </div>
 
         <label class="top">
-          Business Description <textarea name="description"></textarea>
+          <textarea name="description"></textarea> <span>Business Description</span>
         </label>
 
         <label>
@@ -190,6 +192,132 @@
       <input type="submit" value="Join Now">
       
     </form>
+
+    <table class="memberships">
+
+      <thead>
+
+        <tr>
+
+          <th></th>
+
+          <th>Non-Profit</th>
+
+          <th>Bronze</th>
+
+          <th>Silver</th>
+
+          <th>Gold</th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+        <tr>
+
+          <th>Business Referals</th>
+
+          <td><span class="checkmark">&#10004;</span></td>
+
+          <td><span class="checkmark">&#10004;</span></td>
+
+          <td><span class="checkmark">&#10004;</span></td>
+          
+          <td><span class="checkmark">&#10004;</span></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Courses/Training</th>
+
+          <td><span class="xmark">&#10008;</span></td>
+
+          <td><span class="checkmark">&#10004;</span></td>
+
+          <td><span class="checkmark">&#10004;</span></td>
+
+          <td><span class="checkmark">&#10004;</span></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Website Banner Ad</th>
+
+          <td><span class="xmark">&#10008;</span></td>
+
+          <td><span class="xmark">&#10008;</span></td>
+
+          <td><span class="checkmark">&#10004;</span></td>
+
+          <td><span class="checkmark">&#10004;</span></td>
+
+        </tr>
+
+        <tr>
+
+          <th>Ribbon Cuttings</th>
+
+          <td><span class="xmark">&#10008;</span></td>
+
+          <td><span class="xmark">&#10008;</span></td>
+
+          <td><span class="xmark">&#10008;</span></td>
+
+          <td><span class="checkmark">&#10004;</span></td>
+
+        </tr>
+
+      </tbody>
+
+      <tfoot>
+
+        <tr>
+
+          <th>Cost (US dollars)</th>
+
+          <td>FREE</td>
+
+          <td>500</td>
+
+          <td>1,000</td>
+
+          <td>2,000</td>
+
+        </tr>
+
+      </tfoot>
+
+    </table>
+
+    <!-- <div class="memberships-levels">
+
+      <div class="memberships-card">
+
+        <div class="memberships-card__left">
+
+          <span>Non Profit</span>
+
+        </div>
+
+        <div class="memberships-card__right">
+
+          <h2>Benefits</h2>
+
+          <ul>
+
+            <li></li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div> -->
 
   </main>
 
