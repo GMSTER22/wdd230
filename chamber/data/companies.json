@@ -1,0 +1,84 @@
+[
+
+  {
+    "name": "Air Burkina",
+    "address": "01 BP 1459 Ouagadougou 01",
+    "phone": "226 25 49 23 25",
+    "website": "https://air-burkina.com",
+    "imageurl": "airburkina.png",
+    "membership": "gold"
+  },
+
+  {
+    "name": "Orange",
+    "address": "01, Ouagadougou, Burkina Faso",
+    "phone": "226 25 66 33 00",
+    "website": "https://www.orange.bf",
+    "imageurl": "orange.png",
+    "membership": "silver"
+  },
+
+  {
+    "name": "Sonabhy",
+    "address": "01 BP 4394 Ouagadougou 01",
+    "phone": "226 25 43 00 01",
+    "website": "https://www.sonabhy.bf",
+    "imageurl": "sonabhy.png",
+    "membership": ""
+  },
+  
+  {
+    "name": "Moov Africa",
+    "address": "BP 10000, Ouagadougou, Burkina Faso",
+    "phone": "226 25 33 40 01",
+    "website": "https://moov-africa.bf",
+    "imageurl": "moovafrica.png",
+    "membership": ""
+  },
+
+  {
+    "name": "ONEA",
+    "address": "rue 9.04, Goughin, Ouagadougou, Burkina Faso",
+    "phone": "226 80 00 11 11", 
+    "website": "https://oneabf.com/",
+    "imageurl": "onea.jpg",
+    "membership": ""
+  },
+
+  {
+    "name": "Megamonde",
+    "address": "Avenue Kwamé N'Krumah, Koulouba, Ouagadougou, Burkina Faso",
+    "phone": "226 25 31 13 03",
+    "website": "https://www.megamondemotors.com/",
+    "imageurl": "megamonde.png",
+    "membership": ""
+  },
+
+  {
+    "name": "Essakane",
+    "address": "rue 13.16, Ouagadougou, Burkina Faso",
+    "phone": "226 70 74 34 49",
+    "website": " www.iamgoldessakane.com",
+    "imageurl": "essakane.png",
+    "membership": ""
+  },
+
+  {
+    "name": "Sainte Therese",
+    "address": "01 BP 1631, Ouagadougou 01",
+    "phone": "226 70 39 36 29",
+    "website": "https://orphelinat-saintetherese.org",
+    "imageurl": "saintetherese.jpg",
+    "membership": ""
+  },
+
+  {
+    "name": "Diamond Cement",
+    "address": "Diamond House, M2C2+J6M, Steel Works Rd, Tema, Ghana",
+    "phone": "233 201 521 829",
+    "website": "https://diamondcement.com/burkina-faso",
+    "imageurl": "diamondcement.png",
+    "membership": ""
+  }
+
+]

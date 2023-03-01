@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Directory</title>
+  <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+  <meta name="description" content="Check out these businesses that are doing a great job in their respective fields.">
+
+  <!-- Normalize file -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="./styles/small.css">
+  <link rel="stylesheet" href="./styles/medium.css">
+  <link rel="stylesheet" href="./styles/large.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Patua+One&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+
+    <div id="banner">
+
+      <p>"🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m."</p>
+  
+    </div>
+
+    <div class="header-wrapper">
+
+      <div class="header-nav">
+
+        <div class="logo">
+
+          <figure class="logo__image">
+
+            <img src="./images/logo/logo.webp" alt="Ouagadougou Chamber of Commerce Logo">
+
+          </figure>
+
+          <div class="logo__text">
+            <span>Ouagadougou</span> 
+            <br>
+            <span>Chamber of Commerce</span>
+          </div>
+
+        </div>
+
+        <nav>
+
+          <ul>
+
+            <li><a class="active" href="./discover.html">Discover</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+
+          </ul>
+
+        </nav>
+
+        <div class="nav-info">
+
+          <div class="social-media">
+
+            <a href="https://facebook.com" aria-label="visit our facebook page">
+
+              <svg class="fa-brands" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+              </svg>
+
+            </a>
+    
+            <a href="https://linkedin.com" aria-label="visit our linkedin page">
+
+              <svg class="fa-brands" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/>
+              </svg>
+
+            </a>
+    
+          </div>
+    
+          <button class="nav-menu" aria-label="toggle menu">
+            
+            <svg class="fa-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+
+            <svg class="fa-xmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+              <path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/>
+            </svg>
+          
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="nav-date">
+
+        <span id="nav-current-date"></span>
+
+        <span id="nav-last-visit"></span>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="directory">
+
+    <h1>Business Directory</h1>
+
+    <div class="directory__wrapper">
+
+      <div class="directory__icons">
+
+        <button id="grid-button">
+
+          <svg class="fa-grid" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg>
+
+        </button>
+
+        <button id="list-button">
+
+          <svg class="fa-list" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --><path d="M80 368H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm0-320H16A16 16 0 0 0 0 64v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16V64a16 16 0 0 0-16-16zm0 160H16a16 16 0 0 0-16 16v64a16 16 0 0 0 16 16h64a16 16 0 0 0 16-16v-64a16 16 0 0 0-16-16zm416 176H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"/></svg>
+          
+        </button>
+
+      </div>
+
+      <div class="directory__cards list">
+
+        
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="footer__wrapper">
+
+      <div class="footer__info">
+
+        <div class="footer__physical-address">
+
+          <figure class="footer__logo">
+
+            <img src="./images/logo/logo.webp" alt="Ouagadougou Chamber of Commerce Logo">
+
+          </figure>
+
+          <address>
+            <strong>Ouagadougou Chamber of Commerce</strong> <br>
+            10 Rue De La Paix <br>
+            Ouagadougou, Burkina Faso
+          </address>
+
+        </div>
+
+        <div class="footer__online-address">
+
+          <address>
+            <span>info@Ouagacc.org</span>
+            <span>+(226) 36-26-94</span>
+            <span>
+
+              <a class="location" href="https://goo.gl/maps/VXc6QKSfyvCK1GUA7" target="_blank">
+
+                &#x1F4CD;
+                Location Map
+              
+              </a>
+            
+            </span>
+
+          </address>
+
+        </div>
+
+      </div>
+
+      <hr class="footer-hr">
+
+      <div class="footer__signature">
+
+        <div>
+
+          &copy; <span id="year">2020</span> Ouagadougou Chamber
+
+        </div>
+        
+        <div>
+
+          <strong>Souleymane Gael Nongnogo</strong>
+
+        </div>
+        
+        <div>
+
+          WDD 230 Project
+
+        </div>
+
+        <div>
+
+          Last Modification: <span id="footer-date">11/22/2021 06:20:28</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+  <script type="module" src="./scripts/scripts.js"></script>  
+</body>
+</html>

@@ -124,4 +124,47 @@ localStorage.setItem( 'lastVisit', date.getTime() );
 
 const submissionInputElement = document.querySelector( '#submissionDate' );
 
-window.addEventListener( 'load', (event) => submissionInputElement.value = date.toISOString().substring(0,10) );
+if ( submissionInputElement ) {
+
+  window.addEventListener( 'load', (event) => submissionInputElement.value = date.toISOString().substring(0,10) );
+
+}
+
+// Directory cards
+
+import companies from "../data/companies.json" assert {type: 'json'};
+
+console.log(companies);
+
+const cardsElement = document.querySelector( '.directory__cards' );
+
+companies.forEach( company => {
+
+  const { name, address, phone, imageurl, website } = company;
+
+  const cardElement = document.createElement( 'div' );
+  const imageElement = document.createElement( 'img' );
+  const nameElement = document.createElement( 'span' );
+  const addressElement = document.createElement( 'span' );
+  const phoneElement = document.createElement( 'span' );
+  const anchorElement = document.createElement( 'a' );
+
+  cardElement.classList.add( 'directory__card' );
+
+  imageElement.setAttribute( 'src', `./images/directory/${imageurl}` );
+  imageElement.setAttribute( 'alt', `${name} logo image` );
+
+  nameElement.textContent = name;
+  nameElement.classList.add( 'directory__card-name' );
+
+  addressElement.textContent = address;
+
+  phoneElement.textContent = phone;
+
+  anchorElement.textContent = website;
+
+  cardElement.append( nameElement, imageElement, addressElement, phoneElement, anchorElement );
+
+  cardsElement.append( cardElement );
+
+} );
