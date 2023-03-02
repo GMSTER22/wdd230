@@ -140,8 +140,8 @@ const listButton = document.querySelector( '#list-button' );
 
 const cardsElement = document.querySelector( '.directory__cards' );
 
-if ( gridButton ) gridButton.addEventListener( 'click', onGridButtonClick );
-if ( listButton )  listButton.addEventListener( 'click', onListButtonClick );
+gridButton?.addEventListener( 'click', onGridButtonClick );
+listButton?.addEventListener( 'click', onListButtonClick );
 
 fetchData( companiesUrl );
 
@@ -182,9 +182,9 @@ function generateDOM( data ) {
     anchorElement.setAttribute( 'target', '_blank' );
     anchorElement.textContent = website;
 
-    cardElement.append( nameElement, imageElement, addressElement, phoneElement, anchorElement );
+    cardElement?.append( nameElement, imageElement, addressElement, phoneElement, anchorElement );
 
-    cardsElement.append( cardElement );
+    cardsElement?.append( cardElement );
 
   } );
 
