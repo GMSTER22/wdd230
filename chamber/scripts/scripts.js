@@ -140,8 +140,8 @@ const listButton = document.querySelector( '#list-button' );
 
 const cardsElement = document.querySelector( '.directory__cards' );
 
-gridButton.addEventListener( 'click', onGridButtonClick );
-listButton.addEventListener( 'click', onListButtonClick );
+if ( gridButton ) gridButton.addEventListener( 'click', onGridButtonClick );
+if ( listButton )  listButton.addEventListener( 'click', onListButtonClick );
 
 fetchData( companiesUrl );
 
