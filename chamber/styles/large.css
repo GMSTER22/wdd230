@@ -7,6 +7,7 @@
   main.discover,
   main.join-page,
   main.thankyou,
+  main.directory,
   .footer__wrapper {
     max-width: 1440px;
     margin-right: auto;
@@ -136,6 +137,17 @@
   table.memberships td .xmark,
   table.memberships td .checkmark {
     font-size: 20px;
+  }
+
+  /* Directory page styles */
+
+  .directory__cards.list .directory__card {
+    display: grid;
+    grid-template-columns: 130px minmax(250px, 45%) minmax(110px, 12%) 1fr;
+    justify-items: start;
+    justify-content: space-between;
+    column-gap: 15px;
+    padding: 20px 5px;
   }
 
 }

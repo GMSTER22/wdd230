@@ -132,39 +132,88 @@ if ( submissionInputElement ) {
 
 // Directory cards
 
-import companies from "../data/companies.json" assert {type: 'json'};
+const companiesUrl = "https://gmster22.github.io/wdd230/chamber/data/companies.json";
 
-console.log(companies);
+const directoryCardsElement = document.querySelector( '.directory__cards' );
+const gridButton = document.querySelector( '#grid-button' );
+const listButton = document.querySelector( '#list-button' );
 
 const cardsElement = document.querySelector( '.directory__cards' );
 
-companies.forEach( company => {
+gridButton.addEventListener( 'click', onGridButtonClick );
+listButton.addEventListener( 'click', onListButtonClick );
 
-  const { name, address, phone, imageurl, website } = company;
+fetchData( companiesUrl );
 
-  const cardElement = document.createElement( 'div' );
-  const imageElement = document.createElement( 'img' );
-  const nameElement = document.createElement( 'span' );
-  const addressElement = document.createElement( 'span' );
-  const phoneElement = document.createElement( 'span' );
-  const anchorElement = document.createElement( 'a' );
+async function fetchData( url ) {
 
-  cardElement.classList.add( 'directory__card' );
+  const response = await fetch( url );
+  const data = await response.json();
+  generateDOM(data);
 
-  imageElement.setAttribute( 'src', `./images/directory/${imageurl}` );
-  imageElement.setAttribute( 'alt', `${name} logo image` );
+}
 
-  nameElement.textContent = name;
-  nameElement.classList.add( 'directory__card-name' );
+function generateDOM( data ) {
 
-  addressElement.textContent = address;
+  data.forEach( company => {
 
-  phoneElement.textContent = phone;
+    const { name, address, phone, imageurl, website } = company;
 
-  anchorElement.textContent = website;
+    const cardElement = document.createElement( 'div' );
+    const imageElement = document.createElement( 'img' );
+    const nameElement = document.createElement( 'span' );
+    const addressElement = document.createElement( 'span' );
+    const phoneElement = document.createElement( 'span' );
+    const anchorElement = document.createElement( 'a' );
 
-  cardElement.append( nameElement, imageElement, addressElement, phoneElement, anchorElement );
+    cardElement.classList.add( 'directory__card' );
 
-  cardsElement.append( cardElement );
+    imageElement.setAttribute( 'src', `./images/directory/${imageurl}` );
+    imageElement.setAttribute( 'alt', `${name} logo image` );
 
-} );
+    nameElement.textContent = name;
+    nameElement.classList.add( 'directory__card-name' );
+
+    addressElement.textContent = address;
+
+    phoneElement.textContent = phone;
+
+    anchorElement.setAttribute( 'href', website );
+    anchorElement.setAttribute( 'target', '_blank' );
+    anchorElement.textContent = website;
+
+    cardElement.append( nameElement, imageElement, addressElement, phoneElement, anchorElement );
+
+    cardsElement.append( cardElement );
+
+  } );
+
+}
+
+function onGridButtonClick() {
+
+  const classes = directoryCardsElement.classList;
+
+  if ( classes.contains( 'grid' ) ) return;
+
+  classes.toggle( 'list' );
+  classes.toggle( 'grid' );
+  console.log('check')
+  // if ( classes.contains( 'list' ) ) classes.remove( 'list' );
+  // classes.add( 'grid' );
+
+}
+
+function onListButtonClick() {
+
+  const classes = directoryCardsElement.classList;
+
+  if ( classes.contains( 'list' ) ) return;
+
+  classes.toggle( 'list' );
+  classes.toggle( 'grid' );
+
+  // if ( classes.contains('grid') ) classes.remove( 'grid' );
+  // classes.add( 'list' );
+
+}
