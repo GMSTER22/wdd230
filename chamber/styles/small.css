@@ -515,13 +515,20 @@ footer {
   cursor: pointer;
 }
 
-.join-page form .submission-date-label {
+/* label[aria-hidden="true"]{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+} */
+
+.join-page form #submissionDate {
   display: none;
 }
-
-/* .join-page form #submissionDate {
-  display: none;
-} */
 
 table.memberships {
   width: 100%;
