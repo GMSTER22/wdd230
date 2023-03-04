@@ -38,16 +38,29 @@ buttonElement.addEventListener( 'click', () => {
 
   const { height: headerHeight } = document.querySelector( 'header' ).getBoundingClientRect();
 
-  // if ( ! navElement.classList.contains( 'nav-open' ) ) navElement.style.top = `${headerHeight}px`;
-
-  // if ( navElement.classList.contains( 'nav-open' ) ) navElement.style.removeProperty( 'top' );
-
   navElement.style.top = `${headerHeight}px`;
 
   navElement.classList.toggle( 'nav-open' );
 
 } );
 
+// Navigation active class
+
+// const navLinks = Array.from( document.querySelectorAll( 'nav li a' ) );
+
+// const removeActiveClassFromLinks = () => navLinks.forEach( link => link.classList.toggle( 'link', link.classList.contains( 'active' ) ) );
+
+// navLinks.forEach( link => {
+
+//   link.addEventListener( 'click', event => {
+
+//     removeActiveClassFromLinks();
+
+//     link.classList.add( 'active' );
+
+//   } );
+
+// } );
 
 // Lazy loading images
 
@@ -129,3 +142,4 @@ if ( submissionInputElement ) {
   window.addEventListener( 'load', (event) => submissionInputElement.value = date.toISOString().substring(0,10) );
 
 }
+

@@ -58,29 +58,33 @@ function generateDOM( data ) {
 
 }
 
+function toggleDirectoryButtons() {
+  gridButton?.classList.toggle('active');
+  listButton?.classList.toggle('active');
+}
+
 function onGridButtonClick() {
 
-  const classes = directoryCardsElement.classList;
+  const directoryCardsElementClasses = directoryCardsElement.classList;
 
-  if ( classes.contains( 'grid' ) ) return;
+  if ( directoryCardsElementClasses.contains( 'grid' ) ) return;
 
-  classes.toggle( 'list' );
-  classes.toggle( 'grid' );
-  // if ( classes.contains( 'list' ) ) classes.remove( 'list' );
-  // classes.add( 'grid' );
+  directoryCardsElementClasses.toggle( 'list' );
+  directoryCardsElementClasses.toggle( 'grid' );
+
+  toggleDirectoryButtons();
 
 }
 
 function onListButtonClick() {
 
-  const classes = directoryCardsElement.classList;
+  const directoryCardsElementClasses = directoryCardsElement.classList;
 
-  if ( classes.contains( 'list' ) ) return;
+  if ( directoryCardsElementClasses.contains( 'list' ) ) return;
 
-  classes.toggle( 'list' );
-  classes.toggle( 'grid' );
+  directoryCardsElementClasses.toggle( 'list' );
+  directoryCardsElementClasses.toggle( 'grid' );
 
-  // if ( classes.contains('grid') ) classes.remove( 'grid' );
-  // classes.add( 'list' );
+  toggleDirectoryButtons();
 
 }
