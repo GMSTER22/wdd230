@@ -515,9 +515,13 @@ footer {
   cursor: pointer;
 }
 
-.join-page form #submissionDate {
+.join-page form .submission-date-label {
   display: none;
 }
+
+/* .join-page form #submissionDate {
+  display: none;
+} */
 
 table.memberships {
   width: 100%;
