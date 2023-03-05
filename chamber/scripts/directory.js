@@ -37,7 +37,7 @@ function generateDOM( data ) {
     cardElement.classList.add( 'directory__card' );
 
     imageElement.setAttribute( 'src', `./images/directory/${imageurl}` );
-    imageElement.setAttribute( 'alt', `${name} logo image` );
+    imageElement.setAttribute( 'alt', `${name} logo` );
 
     nameElement.textContent = name;
     nameElement.classList.add( 'directory__card-name' );

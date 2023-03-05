@@ -46,21 +46,19 @@ buttonElement.addEventListener( 'click', () => {
 
 // Navigation active class
 
-// const navLinks = Array.from( document.querySelectorAll( 'nav li a' ) );
+const navLinks = Array.from( document.querySelectorAll( 'nav li a' ) );
 
-// const removeActiveClassFromLinks = () => navLinks.forEach( link => link.classList.toggle( 'link', link.classList.contains( 'active' ) ) );
+const currentLocation = location.pathname.match( /\w+.html$/ );
 
-// navLinks.forEach( link => {
+if ( currentLocation ) {
 
-//   link.addEventListener( 'click', event => {
+  const linkName = currentLocation[0].split('.')[0];
 
-//     removeActiveClassFromLinks();
+  const currentLink = navLinks.filter( link => link.textContent.toLowerCase() == linkName.toLowerCase() );
 
-//     link.classList.add( 'active' );
+  currentLink[0].classList.toggle( 'active' );
 
-//   } );
-
-// } );
+}
 
 // Lazy loading images
 
