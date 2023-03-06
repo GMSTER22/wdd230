@@ -1,0 +1,24 @@
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+h1, h2 {
+  color: tomato;
+}
+
+figcaption {
+  text-transform: capitalize;
+}
+
+main {
+  background-color: #ededed;
+  max-width: fit-content;
+  padding: 10px 30px;
+  border-radius: 10px;
+}
