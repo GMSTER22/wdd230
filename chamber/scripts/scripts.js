@@ -56,7 +56,7 @@ if ( currentLocation ) {
 
   const currentLink = navLinks.filter( link => link.textContent.toLowerCase() == linkName.toLowerCase() );
 
-  currentLink[0].classList.toggle( 'active' );
+  currentLink[0]?.classList.toggle( 'active' );
 
 }
 

@@ -211,7 +211,7 @@ section, .spotlights, .join {
 }
 
 .spotlights hr {
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 .spotlights__address a {
@@ -301,6 +301,10 @@ section, .spotlights, .join {
   min-height: 250px;
 }
 
+[class^="spotlight-"]:nth-child(2) {
+  border-top: none;
+}
+
 .event {
   grid-row: 2/3;
 }
@@ -340,12 +344,15 @@ section, .spotlights, .join {
   font-size: 30px;
 }
 
-.fa-weather {
-  max-width: 80px;
+#weather-icon {
+  max-width: 50px;
 }
 
 .weather__text h3 {
   margin-bottom: 10px;
+  text-align: center;
+  word-spacing: 5px;
+  text-transform: capitalize;
 }
 
 .weather__info {
@@ -389,6 +396,10 @@ footer {
   margin-bottom: 5px;
 }
 
+.footer__attribution a {
+  color: var( --accent3-color );
+  text-decoration: underline;
+}
 
 /* Discover page styles */
 

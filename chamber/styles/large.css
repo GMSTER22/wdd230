@@ -84,6 +84,11 @@
     display: block;
   }
 
+  [class^="spotlight-"]:nth-child(2) {
+    border-top: none;
+    border-bottom: none;
+  }
+
   /* Discover page styles */
 
   main.discover {
