@@ -694,169 +694,143 @@ table.memberships tbody tr:nth-child(even) {
   display: none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Contact page */
+
+.contact-page {
+  padding: 35px 0px;
+}
+
+.contact-page h1 {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.contact-page__content {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 40px;
+}
+
+.contact-page__info {
+  flex: 1 1 50%;
+  padding: 30px 20px;
+  background-color: var(--secondary-color);
+}
+
+.contact-page__map {
+  flex: 1 1 50%;
+}
+
+.contact-page__info h2 {
+  margin-bottom: 25px;
+}
+
+.contact-page__visit {
+  margin-bottom: 30px;
+}
+
+.contact-page__address {
+  margin-bottom: 20px;
+}
+
+.contact-page__map iframe {
+  display: block;
+  width: 100%;
+  height: 500px;
+  height: 100%;
+}
+
+.contact-page__contacts div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.contact-page__contact span {
+  display: block;
+  line-height: 1.3;
+}
+
+/* .contact-page__form {
+  padding: 0 10px;
+} */
+
+.contact-page__form form fieldset {
+  border: none;
+}
+
+.contact-page__form form legend {
+  font-family: var(--heading-font);
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 0 20px;
+  margin-bottom: 25px;
+}
+
+.contact-page__form form label.top {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 20px;
+}
+
+.contact-page__form form label.top span  {
+  margin-bottom: 4px;
+}
+
+.contact-page form label input,
+.contact-page form label textarea {
+  border: 1px solid #979797;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-page form .member {
+  margin-bottom: 20px;
+}
+
+.contact-page form .member .member__title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contact-page form .member label.sbs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+.contact-page form .member label.sbs input {
+  margin-right: 5px;
+}
+
+.contact-page form label textarea {
+  resize: vertical;
+}
+
+.contact-page form label.top input:required ~ span::after,
+.contact-page form label.top textarea:required ~ span::after {
+  content: "\002a";
+  font-weight: bold;
+  color: red;
+  margin-left: 3px;
+}
+
+.contact-page form label.top input:not([type="email"])::placeholder {
+  color: transparent;
+}
+
+.contact-page form label.top input:required:not(:placeholder-shown):invalid {
+  border-left: 8px solid red;
+}
+
+.contact-page form label.top input:required:valid {
+  border-left: 8px solid green;
+}
+
+.contact-page form input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  cursor: pointer;
+}

@@ -132,4 +132,22 @@
     padding: 20px;
   }
 
+  /* Contact page styles */
+
+  .contact-page__content {
+    flex-direction: row;
+  }
+
+  .contact-page__form form fieldset {
+    padding: 20px 50px;
+    border-radius: 5px;
+    border: 1px solid var(--accent2-color);    
+  }
+
+  .contact-page__form {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
 }

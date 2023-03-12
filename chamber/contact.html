@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Join Ouagadougou Chamber of Commerce</title>
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-  <meta name="description" content="This is your opportunity to join the Ouagadougou Chamber of Commerce website where businessmen and professionals meet to make great things happen. Our goal is to provide business owners with the information they need to grow, have a platform where they can build great business relationship with one another.">
+  <meta name="description" content="The Ouagadougou Chamber of Commerce is the best place to find a member or business in the city of Ouagadougou. Contact us to get more information.">
 
   <!-- Normalize file -->
   <link rel="stylesheet" href="./styles/normalize.css">
@@ -63,8 +63,8 @@
 
             <li><a href="./discover.html">Discover</a></li>
             <li><a href="./directory.html">Directory</a></li>
-            <li><a href="#">Join</a></li>
-            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./join.html">Join</a></li>
+            <li><a href="#">Contact</a></li>
 
           </ul>
 
@@ -120,178 +120,119 @@
 
   </header>
 
-  <main class="join-page">
+  <main class="contact-page">
 
-    <h1>Join The Chamber</h1>
+    <h1>Contact The Chamber</h1>
 
-    <div class="join-page__wrapper">
+    <div class="contact-page__wrapper">
 
-      <form action="./thankyou.html" method="get">
+      <div class="contact-page__content">
 
-        <fieldset>
+        <div class="contact-page__info">
 
-          <legend>Applicant Information</legend>
+          <div class="contact-page__visit">
 
-          <label class="top">        
-            <input type="text" name="fname" placeholder="First name" required> <span>First Name</span>
-          </label>      
+            <h2>Visit Us</h2>
 
-          <label class="top">        
-            <input type="text" name="lname" placeholder="Last name" required> <span>Last Name</span>  
-          </label>
+            <div class="contact-page__address">
+              <address>
+                <strong>Ouagadougou Chamber of Commerce</strong> <br>
+                10 Rue De La Paix <br>
+                Ouagadougou, Burkina Faso
+              </address>
+            </div>
 
-          <label class="top">        
-            <input type="text" name="title" placeholder="Title" pattern="([A-Za-z\s-]){7,}"> <span>Title</span>    
-          </label>
+            <div class="contact-page__hours">
+              Monday - Friday: 9:00 a.m. to 5:00 p.m.
+            </div>
 
-          <label class="top">        
-            <input type="email" name="Email" placeholder="johndoe@gmail.com" required> <span>Email</span>   
-          </label>
-
-          <label class="top">        
-            <input type="tel" name="tel" placeholder="Phone" pattern="[0-9]{10}" required> <span>Phone</span>
-          </label>
-
-        </fieldset>
-
-        <fieldset>
-
-          <legend>Business Information</legend>
-
-          <label class="top">        
-            <input type="text" name="businessName" placeholder="Business name" required> <span>Business Name</span>      
-          </label>
-
-          <div class="memberships">
-            <span>Membership Level:</span>
-            <label class="sbs">
-              <input type="radio" name="membershipslevels" value="nonProfit"> <span>Non Profit</span> 
-            </label>
-
-            <label class="sbs">
-              <input type="radio" name="membershipslevels" value="bronze"> <span>Bronze</span>
-            </label>
-
-            <label class="sbs">
-              <input type="radio" name="membershipslevels" value="silver"> <span>Silver</span>
-            </label>
-
-            <label class="sbs">
-              <input type="radio" name="membershipslevels" value="gold"> <span>Gold</span>
-            </label>
           </div>
 
-          <label class="top">
-            <textarea name="description"></textarea> <span>Business Description</span>
-          </label>
+          <div class="contact-page__contacts">
 
-          <input id="submissionDate" type="hidden" name="date" value="">
+            <h2>Points of Contact</h2>
 
-        </fieldset>
+            <div class="contact-page__contact">
+              <span class="contact-page__name">Jean Ouedraogo</span>
+              <span class="contact-page__title">President & CEO</span>
+              <span class="contact-page__phone">(+226) 72 35 64 98</span>
+            </div>
 
-        <input class="cta" type="submit" value="Join Now">
+            <div class="contact-page__contact">
+              <span class="contact-page__name">Paul Henry Sawadogo</span>
+              <span class="contact-page__title">Vice President</span>
+              <span class="contact-page__phone">(+226) 70 26 35 80</span>
+            </div>
+
+            <div class="contact-page__contact">
+              <span class="contact-page__name">Victor Damiba</span>
+              <span class="contact-page__title">Operations Assistant</span>
+              <span class="contact-page__phone">(+226) 71 40 44 58</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="contact-page__map">
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3898.909034042427!2d-2.3276485!3d12.2544349!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2e1b2463caebd3%3A0xa2433593a96aa60b!2sChambre%20de%20commerce%20et%20d&#39;industrie%20du%20Burkina%20Faso!5e0!3m2!1sen!2sus!4v1678636903464!5m2!1sen!2sus" style="border:0;" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+      </div>
+
+      <div class="contact-page__form">
+
+        <form action="./thankyou.html" method="get">
+
+          <fieldset>
+
+            <legend>Contact Us</legend>
+
+            <label class="top">
+              <input type="text" name="fname" placeholder="First Name" required> <span>First Name</span>
+            </label>
+
+            <label class="top">
+              <input type="text" name="lname" placeholder="Last Name" required> <span>Last Name</span>
+            </label>
+
+            <label class="top">
+              <input type="email" name="email" placeholder="johndoe@gmail.com" required> <span>Email</span>
+            </label>
+
+            <label class="top">
+              <input type="text" name="company"> <span>Company Name</span>
+            </label>
+
+            <div class="member">
+
+              <span class="member__title">Are you a Chamber member?</span>
+              <label class="sbs">
+                <input type="radio" name="member__status" value="yes"> <span>Yes</span>
+              </label>
+              <label class="sbs">
+                <input type="radio" name="member__status" value="no"> <span>No</span>
+              </label>
+              <label class="sbs">
+                <input type="radio" name="member__status" value="uncertain"> <span>Not sure</span>
+              </label>
+
+            </div>
+
+            <label class="top">
+              <textarea name="question" required></textarea>
+              <span>What questions do you have for the Ouagadougou Chamber?</span>
+            </label>
+
+            <input class="cta" type="submit" value="Send Message">
+
+          </fieldset>
+
+        </form>
         
-      </form>
-
-      <table class="memberships">
-
-        <thead>
-
-          <tr>
-
-            <th>Benefits</th>
-
-            <th>Non-Profit</th>
-
-            <th>Bronze</th>
-
-            <th>Silver</th>
-
-            <th>Gold</th>
-
-          </tr>
-
-        </thead>
-
-        <tbody>
-
-          <tr>
-
-            <th>Business Referals</th>
-
-            <td><span class="checkmark">&#10004;</span></td>
-
-            <td><span class="checkmark">&#10004;</span></td>
-
-            <td><span class="checkmark">&#10004;</span></td>
-            
-            <td><span class="checkmark">&#10004;</span></td>
-
-          </tr>
-
-          <tr>
-
-            <th>Courses/Training</th>
-
-            <td><span class="xmark">&#10008;</span></td>
-
-            <td><span class="checkmark">&#10004;</span></td>
-
-            <td><span class="checkmark">&#10004;</span></td>
-
-            <td><span class="checkmark">&#10004;</span></td>
-
-          </tr>
-
-          <tr>
-
-            <th>Website Banner Ad</th>
-
-            <td><span class="xmark">&#10008;</span></td>
-
-            <td><span class="xmark">&#10008;</span></td>
-
-            <td><span class="checkmark">&#10004;</span></td>
-
-            <td><span class="checkmark">&#10004;</span></td>
-
-          </tr>
-
-          <tr>
-
-            <th>Ribbon Cuttings</th>
-
-            <td><span class="xmark">&#10008;</span></td>
-
-            <td><span class="xmark">&#10008;</span></td>
-
-            <td><span class="xmark">&#10008;</span></td>
-
-            <td><span class="checkmark">&#10004;</span></td>
-
-          </tr>
-
-        </tbody>
-
-        <tfoot>
-
-          <tr>
-
-            <th>Cost (US dollars)</th>
-
-            <td>FREE</td>
-
-            <td>250</td>
-
-            <td>500</td>
-
-            <td>1,000</td>
-
-          </tr>
-
-        </tfoot>
-
-      </table>
+      </div>
 
     </div>
 
