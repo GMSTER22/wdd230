@@ -201,7 +201,7 @@ section, .spotlights, .join {
 }
 
 .spotlights h2 {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .spotlights img {
@@ -211,7 +211,7 @@ section, .spotlights, .join {
 }
 
 .spotlights hr {
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 .spotlights__address a {

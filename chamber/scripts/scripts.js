@@ -60,6 +60,76 @@ if ( currentLocation ) {
 
 }
 
+// Spotlight Logic
+
+// console.log(location.href.split("/").reverse()[0])
+
+const locationHref = location.href.split("/").reverse()[0];
+
+if ( locationHref === 'index.html' ) fetchData();
+
+async function fetchData() {
+
+  const companiesUrl = "../chamber/data/companies.json";
+
+  const response = await fetch( companiesUrl );
+  const data = await response.json();
+  const filteredCompanies = data.filter( company => company.membership === 'gold' || company.membership === 'silver' );
+
+  const selectedCompanies = filteredCompanies.slice( 0, 3);
+
+  generateSpotlights(selectedCompanies);
+
+  console.warn('attempted to fetch and parse');
+
+}
+
+function generateSpotlights(companies) {
+
+  const spotlightsElement = document.querySelector( '.spotlights' );
+
+  companies.forEach( (company, index) => {
+
+    const { name, website, phone, imageurl } = company;
+
+    const sectionElement = document.createElement( 'section' );
+    sectionElement?.classList.add( `spotlight-${index + 1}` );
+    
+    const h2Element = document.createElement( 'h2' );
+    h2Element.textContent = name;
+
+    const imageElement = document.createElement( 'img' );
+    imageElement.setAttribute( 'src', `./images/directory/${imageurl}` );
+    imageElement.setAttribute( 'alt', name.toLowerCase() );
+
+    const hrElement = document.createElement( 'hr' );
+    
+    const spanElement = document.createElement( 'span' );
+    spanElement.textContent = 'Contact Information:';
+
+    const addressElement = document.createElement( 'address' );
+    addressElement.classList.add( `spotlights__address` );
+
+    const websiteLinkElement = document.createElement( 'a' );
+    websiteLinkElement.setAttribute( 'href', website );
+    websiteLinkElement.textContent = website;
+
+    const brElement = document.createElement( 'br' );
+
+    const phoneLinkElement = document.createElement( 'a' );
+    phoneLinkElement.setAttribute( 'href', phone );
+    phoneLinkElement.textContent = phone;
+
+    addressElement.append( websiteLinkElement, brElement, phoneLinkElement );
+
+    sectionElement.append( h2Element, imageElement, hrElement, spanElement, addressElement );
+
+    spotlightsElement?.append( sectionElement );
+
+  } );
+
+}
+
 // Lazy loading images
 
 const imagesToLoad = document.querySelectorAll( '[data-src]' );

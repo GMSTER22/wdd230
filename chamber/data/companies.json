@@ -24,7 +24,7 @@
     "phone": "226 25 43 00 01",
     "website": "https://www.sonabhy.bf",
     "imageurl": "sonabhy.png",
-    "membership": ""
+    "membership": "gold"
   },
   
   {
@@ -33,7 +33,7 @@
     "phone": "226 25 33 40 01",
     "website": "https://moov-africa.bf",
     "imageurl": "moovafrica.png",
-    "membership": ""
+    "membership": "bronze"
   },
 
   {
@@ -42,7 +42,7 @@
     "phone": "226 80 00 11 11", 
     "website": "https://oneabf.com",
     "imageurl": "onea.jpg",
-    "membership": ""
+    "membership": "silver"
   },
 
   {
@@ -51,7 +51,7 @@
     "phone": "226 25 31 13 03",
     "website": "https://www.megamondemotors.com",
     "imageurl": "megamonde.png",
-    "membership": ""
+    "membership": "gold"
   },
 
   {
@@ -60,7 +60,7 @@
     "phone": "226 70 74 34 49",
     "website": "https://www.iamgoldessakane.com",
     "imageurl": "essakane.png",
-    "membership": ""
+    "membership": "gold"
   },
 
   {
@@ -69,7 +69,7 @@
     "phone": "226 70 39 36 29",
     "website": "https://orphelinat-saintetherese.org",
     "imageurl": "saintetherese.jpg",
-    "membership": ""
+    "membership": "non-profit"
   },
 
   {
@@ -78,7 +78,7 @@
     "phone": "233 201 521 829",
     "website": "https://diamondcement.com/burkina-faso",
     "imageurl": "diamondcement.png",
-    "membership": ""
+    "membership": "bronze"
   }
 
 ]
