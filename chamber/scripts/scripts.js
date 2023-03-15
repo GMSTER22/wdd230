@@ -89,7 +89,7 @@ function generateSpotlights(companies) {
 
   companies.forEach( (company, index) => {
 
-    const { name, website, phone, imageurl } = company;
+    const { name, website, phone, imageurl, message } = company;
 
     const sectionElement = document.createElement( 'section' );
     sectionElement?.classList.add( `spotlight-${index + 1}` );
@@ -100,6 +100,9 @@ function generateSpotlights(companies) {
     const imageElement = document.createElement( 'img' );
     imageElement.setAttribute( 'src', `./images/directory/${imageurl}` );
     imageElement.setAttribute( 'alt', name.toLowerCase() );
+
+    const paragraphElement = document.createElement( 'p' );
+    paragraphElement.textContent = message;
 
     const hrElement = document.createElement( 'hr' );
     
@@ -121,7 +124,7 @@ function generateSpotlights(companies) {
 
     addressElement.append( websiteLinkElement, brElement, phoneLinkElement );
 
-    sectionElement.append( h2Element, imageElement, hrElement, spanElement, addressElement );
+    sectionElement.append( h2Element, imageElement, paragraphElement, hrElement, spanElement, addressElement );
 
     spotlightsElement?.append( sectionElement );
 

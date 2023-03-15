@@ -6,6 +6,7 @@
     "phone": "226 25 49 23 25",
     "website": "https://air-burkina.com",
     "imageurl": "airburkina.png",
+    "message": "Together we will conquer the air, let's fly.",
     "membership": "gold"
   },
 
@@ -15,6 +16,7 @@
     "phone": "226 25 66 33 00",
     "website": "https://www.orange.bf",
     "imageurl": "orange.png",
+    "message": "Let's bring people closer.",
     "membership": "silver"
   },
 
@@ -24,6 +26,7 @@
     "phone": "226 25 43 00 01",
     "website": "https://www.sonabhy.bf",
     "imageurl": "sonabhy.png",
+    "message": "We're building tomorrow with our energy.",
     "membership": "gold"
   },
   
@@ -33,6 +36,7 @@
     "phone": "226 25 33 40 01",
     "website": "https://moov-africa.bf",
     "imageurl": "moovafrica.png",
+    "message": "Let's break the barriers with Moov.",
     "membership": "bronze"
   },
 
@@ -42,6 +46,7 @@
     "phone": "226 80 00 11 11", 
     "website": "https://oneabf.com",
     "imageurl": "onea.jpg",
+    "message": "Water for all is our top priority.",
     "membership": "silver"
   },
 
@@ -51,6 +56,7 @@
     "phone": "226 25 31 13 03",
     "website": "https://www.megamondemotors.com",
     "imageurl": "megamonde.png",
+    "message": "Get on the road with us, the best motorcycles in Ouaga.",
     "membership": "gold"
   },
 
@@ -60,6 +66,7 @@
     "phone": "226 70 74 34 49",
     "website": "https://www.iamgoldessakane.com",
     "imageurl": "essakane.png",
+    "message": "Essakane is helping build communities.",
     "membership": "gold"
   },
 
@@ -69,6 +76,7 @@
     "phone": "226 70 39 36 29",
     "website": "https://orphelinat-saintetherese.org",
     "imageurl": "saintetherese.jpg",
+    "message": "Let's give a hand to the least fortunate.",
     "membership": "non-profit"
   },
 
@@ -78,6 +86,7 @@
     "phone": "233 201 521 829",
     "website": "https://diamondcement.com/burkina-faso",
     "imageurl": "diamondcement.png",
+    "message": "The best cement in Burkina Faso, strong like diamond.",
     "membership": "bronze"
   }
 
