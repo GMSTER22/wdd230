@@ -63,9 +63,8 @@ if ( currentLocation ) {
 // Spotlight Logic
 
 const locationHref = location.href.split("/").reverse()[0];
-const currentPathname = location.pathname;
 
-if ( locationHref === 'index.html' || currentPathname === '/wdd230/chamber/' ) fetchData();
+if ( locationHref === 'index.html' || locationHref === '' ) fetchData();
 
 async function fetchData() {
 

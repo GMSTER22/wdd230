@@ -205,13 +205,14 @@ section, .spotlights, .join {
 }
 
 .spotlights img {
-  width: 100px;
-  height: 100px;
+  width: auto;
+  max-width: 100px;
   margin: 0 auto 10px auto;
 }
 
 .spotlights hr {
-  margin: 10px 0;
+  width: 100px;
+  margin: 10px auto;
 }
 
 .spotlights__address a {
