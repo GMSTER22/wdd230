@@ -218,6 +218,9 @@ section, .spotlights, .join {
 .spotlights__address a {
   color: var(--primary-color);
   font-weight: bold;
+  word-wrap: break-word;
+  /* white-space: pre-wrap;
+  word-wrap: break-word; */
 }
 
 .hero {
@@ -740,11 +743,10 @@ table.memberships tbody tr:nth-child(even) {
   margin-bottom: 20px;
 }
 
-.contact-page__map iframe {
-  display: block;
+.contact-page__map img {
   width: 100%;
-  height: 500px;
   height: 100%;
+  object-fit: none;
 }
 
 .contact-page__contacts div:not(:last-of-type) {

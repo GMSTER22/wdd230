@@ -1,3 +1,15 @@
+
+const joinButton = document.querySelector( '.join__cta' );
+
+joinButton.addEventListener( 'click', event => {
+
+  // console.log(navigate);
+  location.replace('https://gmster22.github.io/wdd230/chamber/join.html');
+
+} );
+
+console.log(joinButton)
+
 // Date
 
 const date = new Date();
@@ -66,6 +78,12 @@ const locationHref = location.href.split("/").reverse()[0];
 
 if ( locationHref === 'index.html' || locationHref === '' ) fetchData();
 
+function shuffleArray( array ) {
+
+  return array.sort( () => Math.random() - 0.5 );
+
+}
+
 async function fetchData() {
 
   const companiesUrl = "../chamber/data/companies.json";
@@ -74,7 +92,7 @@ async function fetchData() {
   const data = await response.json();
   const filteredCompanies = data.filter( company => company.membership === 'gold' || company.membership === 'silver' );
 
-  const selectedCompanies = filteredCompanies.slice( 0, 3);
+  const selectedCompanies = shuffleArray( filteredCompanies ).slice( 0, 3);
 
   generateSpotlights(selectedCompanies);
 
