@@ -1,15 +1,3 @@
-
-const joinButton = document.querySelector( '.join__cta' );
-
-joinButton.addEventListener( 'click', event => {
-
-  // console.log(navigate);
-  location.replace('https://gmster22.github.io/wdd230/chamber/join.html');
-
-} );
-
-console.log(joinButton)
-
 // Date
 
 const date = new Date();
