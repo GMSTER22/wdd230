@@ -50,20 +50,39 @@ const navLinks = Array.from( document.querySelectorAll( 'nav li a' ) );
 
 const currentLocation = location.pathname.match( /\w+.html$/ );
 
+const activateCurrentLink = target => {
+
+  const targetLink = navLinks.filter( link => link.textContent.toLowerCase() == target )[0];
+
+  targetLink.classList.add( 'active' );
+
+};
+
 if ( currentLocation ) {
 
   const linkName = currentLocation[0].split('.')[0];
 
-  const currentLink = navLinks.filter( link => link.textContent.toLowerCase() == linkName.toLowerCase() );
-
-  if ( currentLink.length ) {
-
-    currentLink[0]?.classList.add( 'active' );
-
-  } else {
-
-    navLinks[0].classList.add( 'active' );
-
+  switch (linkName) {
+    case 'index':
+      activateCurrentLink('home');
+      break;
+    case 'discover':
+      activateCurrentLink('discover');
+      break;
+    case 'directory':
+      activateCurrentLink('directory');
+      break;
+    case 'join':
+      activateCurrentLink('join');
+      break;
+    case 'contact':
+      activateCurrentLink('contact');
+      break;
+    case 'thankyou':
+      break;
+  
+    default:
+      break;
   }
 
 } else {
