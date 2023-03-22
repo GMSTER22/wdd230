@@ -49,7 +49,6 @@ buttonElement.addEventListener( 'click', () => {
 const navLinks = Array.from( document.querySelectorAll( 'nav li a' ) );
 
 const currentLocation = location.pathname.match( /\w+.html$/ );
-console.log(currentLocation.at(-1));
 
 if ( currentLocation ) {
 
@@ -57,7 +56,19 @@ if ( currentLocation ) {
 
   const currentLink = navLinks.filter( link => link.textContent.toLowerCase() == linkName.toLowerCase() );
 
-  currentLink[0]?.classList.toggle( 'active' );
+  if ( currentLink.length ) {
+
+    currentLink[0]?.classList.add( 'active' );
+
+  } else {
+
+    navLinks[0].classList.add( 'active' );
+
+  }
+
+} else {
+
+  navLinks[0].classList.add( 'active' );
 
 }
 
