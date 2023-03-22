@@ -1,0 +1,29 @@
+
+:root {
+  /* font-family: 'Barlow', sans-serif; */
+  /* font-family: 'Fraunces', serif; */
+  --primary-color: ;
+  --secondary-color: ;
+  --tertiary-color: ;
+
+  --heading-font: 'Fraunces', serif;
+  --paragraph-font: 'Barlow', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: var(--paragraph-font);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--heading-font);
+}

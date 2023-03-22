@@ -49,6 +49,7 @@ buttonElement.addEventListener( 'click', () => {
 const navLinks = Array.from( document.querySelectorAll( 'nav li a' ) );
 
 const currentLocation = location.pathname.match( /\w+.html$/ );
+console.log(currentLocation.at(-1));
 
 if ( currentLocation ) {
 
@@ -83,8 +84,6 @@ async function fetchData() {
   const selectedCompanies = shuffleArray( filteredCompanies ).slice( 0, 3);
 
   generateSpotlights(selectedCompanies);
-
-  console.warn('attempted to fetch and parse');
 
 }
 
