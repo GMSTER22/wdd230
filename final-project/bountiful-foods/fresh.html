@@ -1,1 +1,309 @@
-ECHO is on.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bountiful foods</title>
+  <meta name="description" content="Bountiful foods makes the best fruit drinks in California. To make the best quality of fruit drinks, the company works closely with local farmers to get fresh, healthy and organic produce. Bountiful Foods cover the coastal area of California from Los Angeles to San Diego where you can get your favorite fruit drink.">
+
+  <!-- Normalize file -->
+  <link rel="stylesheet" href="./styles/normalize.css">
+
+  <!-- CSS Styles -->
+  <link rel="stylesheet" href="./styles/small.css">
+  <link rel="stylesheet" href="./styles/medium.css">
+  <link rel="stylesheet" href="./styles/large.css">
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Fraunces:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+
+    <div class="wrapper">
+      
+      <img class="logo" src="./images/bountiful-foods-logo.png" alt="bountiful foods logo">
+
+      <nav class="">
+
+        <ul>
+
+          <li><a href="./index.html">Home</a></li>
+
+          <li><a href="#">Fresh</a></li>
+
+          <li><a href="./contact.html">Contact</a></li>
+
+        </ul>
+
+      </nav>
+
+      <div class="menu-icons">
+
+        <button id="open">
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="open">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+
+        </button>
+
+        <button id="close">
+
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        
+        </button>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main>
+
+    <div class="heading">
+
+      <h1>Fresh</h1>
+
+    </div>
+
+    <div class="fresh__form">
+
+      <!-- <div class="fresh-card">
+
+        <h2>Order</h2>
+
+        <div class="fresh-card__entries">
+
+          <div class="fresh-card__entry">
+
+            <span>Name:</span> <span>Esteban</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Email:</span> <span>Esteban@gmail.com</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Phone Number:</span> <span>240 654 9875</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Fruit 1:</span> <span>Apple</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Fruit 2:</span> <span>Orange</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Fruit 3:</span> <span>Avocado</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Carbohydrates:</span> <span>25</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Protein:</span> <span>36</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Fat:</span> <span>45</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Sugar:</span> <span>78</span>
+
+          </div>
+
+          <div class="fresh-card__entry">
+
+            <span>Calories:</span> <span>56</span>
+
+          </div>
+
+        </div>
+
+      </div> -->
+
+      <form id="fresh-form" action="" method="get">
+
+        <fieldset>
+
+          <legend>Build Your Drink</legend>
+
+          <label>
+            <input id="firstname" type="text" name="firstname" placeholder="First Name" required>
+            <span>First Name</span>
+          </label>
+
+          <label>
+            <input id="email" type="email" name="email" placeholder="Email" required>
+            <span>Email</span>
+          </label>
+
+          <label>
+            <input id="phone" type="tel" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="Phone Number" required>
+            <span>Phone Number</span>
+          </label>
+
+          <label>
+            <select id="fruit-select" name="fruitOne" required>
+              <option value="">-- Please choose a fruit --</option>
+              <!-- <option value="banana">Banana</option> -->
+            </select>
+            <span>Fruit One</span>
+          </label>
+
+          <label>
+            <select id="fruit-select" name="fruitTwo" id="fruitTwo" required>
+              <option  value="">-- Please choose a fruit --</option>
+            </select>
+            <span>Fruit Two</span>
+          </label>
+
+          <label>
+            <select id="fruit-select" name="fruitThree" required>
+              <option value="">-- Please choose a fruit --</option>
+            </select>
+            <span>Fruit Three</span>
+          </label>
+
+          <label>
+            <textarea id="instructions" name="instructions"></textarea>
+            <span>Special instructions</span>
+          </label>
+
+          <label>
+            <input type="hidden" name="">
+          </label>
+
+          <input id="" type="submit" value="Order Drink">
+
+        </fieldset>
+
+      </form>
+
+    </div>
+
+  </main>
+
+  <footer>
+
+    <div class="wrapper">
+
+      <div class="footer__main">
+
+        <div class="footer__address">
+
+          <img class="footer__logo" src="./images/bountiful-foods-logo.png" alt="Bountiful Foods logo">
+
+          <address>
+
+            <span>5689 PIO PICO DR,</span> <br>
+            <span>Carlsbad, California 92008</span> <br> <br>
+
+            <a href="tel:+2301524875">230.152.4875</a> <br>
+
+            <a href="mailto:info@bountifulfoods.com">info@bountifulfoods.com</a>
+
+          </address>
+
+        </div>
+
+        <div class="footer__nav">
+
+          <ul>
+  
+            <li><a href="./index.html">Home</a></li>
+  
+            <li><a href="#">Fresh</a></li>
+  
+            <li><a href="./contact.html">Contact</a></li>
+  
+          </ul>
+
+        </div>
+
+        <div class="footer__socials">
+
+          <ul>
+
+            <li>
+              
+              <img src="./images/socials/facebook.svg" alt="">
+
+              <a href="https://www.facebook.com/">Facebook</a>
+            
+            </li>
+
+            <li>
+
+              <img src="./images/socials/youtube.svg" alt="">
+              
+              <a href="https://www.youtube.com/">Youtube</a>
+            
+            </li>
+
+            <li>
+
+              <img src="./images/socials/twitter.svg" alt="">
+              
+              <a href="https://www.twitter.com/">Twitter</a>
+            
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer__date">
+
+      <div class="wrapper">
+
+        <p>
+
+          Last Updated: <span id="last-update">3/21/2023, 11:01</span>
+  
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+  
+  <script src="./scripts/scripts.js"></script>
+</body>
+</html>
+

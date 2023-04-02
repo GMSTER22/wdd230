@@ -1,1 +1,63 @@
-ECHO is on.
+
+@media screen and ( min-width: 80em ) {
+
+  nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    background-color: transparent;
+  }
+
+  nav ul {
+    flex-direction: row;
+    row-gap: 0;
+  }
+
+  nav ul a {
+    color: var(--accent3-color);
+  }
+
+  .menu-icons {
+    display: none;
+  }
+
+  .hero__text-content h1 {
+    width: 50%;
+  }
+
+  .hero__text-content p {
+    width: 40%;
+  }
+
+  .cards__text-content p {
+    line-height: 1.5;
+  }
+
+  .info__weather {
+    padding: 30px;
+  }
+
+  .info__weather-forecasts {
+    flex-direction: row;
+    column-gap: 20px;
+  }
+
+  .info__weather-forecasts .info__weather-forecast {
+    flex-direction: column;
+  }
+
+  .info__weather-forecast .forecast-day {
+    margin-bottom: 25px;
+  }
+
+  .info__weather-forecast .forecast-info {
+    margin-bottom: 10px;
+  }
+
+  .info__weather-forecast .forecast-description {
+    display: block;
+    text-transform: capitalize;
+  }
+
+}
