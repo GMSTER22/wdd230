@@ -237,7 +237,7 @@ setFruitSelect();
 
 const freshFormElement = document.querySelector( '#fresh-form' );
 
-freshFormElement.addEventListener( 'submit', event => {
+freshFormElement?.addEventListener( 'submit', event => {
 
   event.preventDefault();
 
