@@ -32,7 +32,7 @@ lastUpdateElement.textContent = date.toLocaleString('en');
 const cityName = 'Carlsbad';
 const apiKey = '35a048387396cef80aecd7fe57f94b9e';
 
-const openWeatherURL = `http://api.openweathermap.org/data/2.5/forecast?q=${ cityName }&appid=${ apiKey }&units=imperial`;
+const openWeatherURL = `https://api.openweathermap.org/data/2.5/forecast?q=${ cityName }&appid=${ apiKey }&units=imperial`;
 
 async function fetchWeatherData( url ) {
 
