@@ -377,8 +377,8 @@ nav ul a:hover {
 
 .footer__date {
   padding: 20px;
-  background-color: var(--accent1-color);
-  color: var(--secondary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
   font-weight: 700;
   text-align: center;
 }
