@@ -21,8 +21,6 @@ closeButton.addEventListener( 'click', onCloseButtonClick );
 
 const date = new Date();
 
-console.log( date.toLocaleString('en') );
-
 const lastUpdateElement = document.querySelector( '#last-update' );
 
 lastUpdateElement.textContent = date.toLocaleString('en');
@@ -156,6 +154,28 @@ function displayMainWeather( weatherData ) {
 
 fetchWeatherData( openWeatherURL );
 
+// Set Number of drinks ordered
+
+const orderCountElement = document.querySelector( '#order-count' );
+
+function setOrderCount() {
+
+  const orderCount = localStorage.getItem( 'bountifulFoodOrderCount' );
+
+  if ( orderCount ) {
+
+    orderCountElement.textContent = `${ orderCount } ${ orderCount > 1 ? 'drinks' : 'drink' }`;
+
+  } else {
+
+    orderCountElement.textContent = `0 drinks`;
+
+  }
+
+}
+
+if ( orderCountElement ) { setOrderCount() };
+
 // Fresh page
 
 const fruitURL = "https://brotherblazzard.github.io/canvas-content/fruit.json";
@@ -173,9 +193,9 @@ const fetchFruitsData = async url => {
 
       fetchedFruitsData = data;
 
-      console.log( fetchedFruitsData );
+      // console.log( fetchedFruitsData );
 
-      console.log( 'fetched' );
+      // console.log( 'fetched' );
 
       return data;
 
@@ -304,6 +324,9 @@ freshFormElement?.addEventListener( 'submit', event => {
       name: 'Calories',
       value: amountOfCalories
     }, {
+      name: 'Date',
+      value: new Date().toLocaleDateString()
+    }, {
       name: 'Instuctions',
       value: instructions
     } 
@@ -325,7 +348,7 @@ function displayOrder( orderInfo ) {
 
   updateFreshCardElement();
 
-  const freshFormElement = document.querySelector( '.fresh__form' );
+  const freshWrapperElement = document.querySelector( '.fresh' );
 
   const freshCardElement = document.createElement( 'div' );
   freshCardElement.classList.add( 'fresh-card' );
@@ -347,7 +370,16 @@ function displayOrder( orderInfo ) {
     const secondSpan = document.createElement( 'span' );
 
     firstSpan.textContent = name;
-    secondSpan.textContent = value;
+
+    if ( value ) {
+
+      secondSpan.textContent = value;
+
+    } else {
+
+      secondSpan.textContent = 'N/A';
+
+    }    
 
     freshCardEntry.append( firstSpan, secondSpan );
 
@@ -357,7 +389,29 @@ function displayOrder( orderInfo ) {
 
   freshCardElement.append( orderHeadingElement, freshCardEntries );
 
-  freshFormElement.prepend( freshCardElement );
+  freshWrapperElement.prepend( freshCardElement );
+
+  countOrder();
+
+  document.querySelector( '#fresh-form' ).reset();
+
+  document.body.scrollTop = document.documentElement.scrollTop = 0;
+
+}
+
+function countOrder() {
+
+  const orderCount = + localStorage.getItem( "bountifulFoodOrderCount" );
+
+  if ( ! orderCount ) {
+
+    localStorage.setItem( "bountifulFoodOrderCount", 1 );
+
+  } else {
+
+    localStorage.setItem( "bountifulFoodOrderCount", orderCount + 1 )
+
+  }
 
 }
 
@@ -387,7 +441,7 @@ function calculateTotalNutrients( nutrientName, fruitsData ) {
 
   } );
 
-  return total;
+  return total.toFixed( 2 );
 
 }
 

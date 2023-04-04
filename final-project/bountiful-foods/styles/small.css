@@ -1,33 +1,4 @@
 
-/* :root {
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Fraunces', serif;
-  --primary-color: ;
-  --secondary-color: ;
-  --tertiary-color: ;
-
-  --heading-font: 'Fraunces', serif;
-  --paragraph-font: 'Barlow', sans-serif;
-}
-
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  max-width: 1440px;
-  margin: 0 auto;
-  font-family: var(--paragraph-font);
-}
-
-h1, h2, h3, h4, h5 {
-  font-family: var(--heading-font);
-} */
-
 :root {
   --primary-color: #adbf5a;
   --secondary-color: #6a3c2c;
@@ -50,6 +21,7 @@ h1, h2, h3, h4, h5 {
 html {
   font-size: 18px;
   font-weight: 500;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -423,18 +395,18 @@ nav ul a:hover {
   text-align: center;
 }
 
-.fresh__form {
+.fresh {
   max-width: 600px;
   margin: 0 auto;
   padding: 100px 10px;
 }
 
-.fresh__form fieldset {
+.fresh fieldset {
   padding: 30px 10px;
   border-radius: 10px;
 }
 
-.fresh__form legend {
+.fresh legend {
   font-size: 25px;
   font-family: var(--heading-font);
   color: var(--secondary-color);
@@ -442,7 +414,7 @@ nav ul a:hover {
   padding: 0 10px;
 }
 
-.fresh__form label {
+.fresh label {
   width: 100%;
   display: flex;
   flex-direction: column-reverse;
@@ -450,45 +422,45 @@ nav ul a:hover {
   overflow: hidden;
 }
 
-.fresh__form label:nth-of-type(even) {
+.fresh label:nth-of-type(even) {
   margin: 20px 0;
 } 
 
-.fresh__form label input,
-.fresh__form label select,
-.fresh__form label textarea {
+.fresh label input,
+.fresh label select,
+.fresh label textarea {
   border: 1px solid var(--accent3-color);
   padding: 14px 7px;
   border-radius: 10px;
 }
 
-.fresh__form label input:enabled,
-.fresh__form label textarea:enabled {
+.fresh label input:enabled,
+.fresh label textarea:enabled {
   outline-color: var(--secondary-color);
 }
 
-.fresh__form label select {
+.fresh label select {
   text-overflow: ellipsis;
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
 }
 
-.fresh__form label select option {
+.fresh label select option {
   background-color: var(--secondary-color);
   color: var(--accent2-color);
   padding: 10px;
 }
 
-.fresh__form label select option:checked {
+.fresh label select option:checked {
   background-color: var(--primary-color);
   color: var(--accent3-color);
 }
 
-.fresh__form label textarea {
+.fresh label textarea {
   resize: vertical;
 }
 
-.fresh__form input[type="submit"] {
+.fresh input[type="submit"] {
   display: block;
   font-weight: 700;
   color: var(--secondary-color);
@@ -500,27 +472,27 @@ nav ul a:hover {
   transition: background-color .5s, color .5s;
 }
 
-.fresh__form input[type="submit"]:hover {
+.fresh input[type="submit"]:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
   cursor: pointer;
 }
 
-.fresh__form input:required + span::after,
-.fresh__form select:required + span::after {
+.fresh input:required + span::after,
+.fresh select:required + span::after {
   content: " \002A";
   color: red;
 }
 
-.fresh__form input:required:not(:placeholder-shown) {
+.fresh input:required:not(:placeholder-shown) {
   border-bottom: 4px solid red;
 }
 
-.fresh__form input:required:valid {
+.fresh input:required:valid {
   border-bottom: 4px solid green;
 }
 
-.fresh__form .fresh-card {
+.fresh .fresh-card {
   max-width: 600px;
   padding: 30px 0;
   background-color: var(--primary-color);
@@ -528,7 +500,7 @@ nav ul a:hover {
   margin-bottom: 50px;
 }
 
-.fresh__form .fresh-card h2 {
+.fresh .fresh-card h2 {
   text-align: center;
 }
 
@@ -553,10 +525,10 @@ nav ul a:hover {
 }
 
 .fresh-card__entry:last-child {
-  width: fit-content !important;
+  width: fit-content;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: center; 
+  margin: 20px auto 0;
 }
 
 .fresh-card__entry:last-child span:first-child {
@@ -566,3 +538,58 @@ nav ul a:hover {
 .fresh-card__entry:last-child span:last-child {
   text-align: center;
 }
+
+/* About us page */
+
+.about {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, minmax( 250px, 1fr ));
+  /* grid-template-columns: repeat(2, 1fr); */
+  align-items: start;
+  row-gap: 10px;
+  margin: 50px 0;
+}
+
+.about > section {
+  padding: 20px;
+}
+
+.about__values-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.about__values-content h3 {
+  margin-bottom: 5px;
+}
+
+.about__contact a {
+  color: var(--accent3-color);
+}
+
+.about__contact address {
+  margin-bottom: 20px;
+}
+
+.about__contact-hours {
+  display: flex;
+  flex-direction: column;
+}
+
+.about__contact-hours div {
+  display: flex;
+  column-gap: 15px;
+}
+
+.about__map {
+  width: 100%;
+  height: 100%;
+}
+
+.about__map img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
