@@ -27,7 +27,6 @@ html {
 body {
   font-family: var(--paragraph-font);
   background-color: var(--accent1-color);
-  /* color: var(--secondary-color); */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -67,8 +66,8 @@ header .wrapper {
 }
 
 .logo {
-  width: 150px;
-  height: 150px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
@@ -82,7 +81,7 @@ ul {
 
 nav {
   position: absolute;
-  top: 190px;
+  top: 120px;
   left: -100%;
   width: 100%;
   z-index: 1;
@@ -113,7 +112,7 @@ nav ul {
   justify-content: center;
   align-items: center;
   row-gap: 20px;
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 nav ul a {
@@ -146,12 +145,11 @@ nav ul a:hover {
 
 .hero {
   display: grid;
-  grid-template-rows: 1fr;
+  grid-template-rows: minmax(70vh, 1fr);
   grid-template-columns: 1fr;
 }
 
 .hero__text {
-  /* background-color: red; */
   position: relative;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
@@ -180,7 +178,7 @@ nav ul a:hover {
 
 .hero__text-content p {
   width: 80%;
-  margin: 0 auto 10px;
+  margin: 0 auto 25px;
   /* font-size: 24px; */
   /* font-size: 16px; */
   font-size: clamp(0.89rem, 0.8vw + 0.7rem, 1.34rem);
@@ -191,6 +189,12 @@ nav ul a:hover {
   position: relative;
   grid-row: 1 / 2;
   grid-column: 1 / 2;
+}
+
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .hero__img::after {
@@ -339,6 +343,7 @@ nav ul a:hover {
   row-gap: 50px;
   padding: 20px;
   text-align: center;
+  font-size: 16px;
   font-weight: 700;
 }
 
@@ -375,8 +380,28 @@ nav ul a:hover {
   margin-right: 8px;
 }
 
+.footer__line {
+  border: none;
+  width: 80%;
+  height: 1px;
+  background-color: var(--secondary-color);
+  margin: 0 auto;
+}
+
+.footer__attribution {
+  font-size: 15px;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer__attribution a {
+  color: var(--secondary-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
 .footer__date {
   padding: 20px;
+  font-size: 16px;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   font-weight: 700;
@@ -544,7 +569,6 @@ nav ul a:hover {
 .about {
   display: grid;
   grid-template-rows: repeat(auto-fit, minmax( 250px, 1fr ));
-  /* grid-template-columns: repeat(2, 1fr); */
   align-items: start;
   row-gap: 10px;
   margin: 50px 0;

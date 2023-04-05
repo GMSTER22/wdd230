@@ -1,8 +1,21 @@
 
 @media screen and ( min-width: 48em ) {
 
+  .logo {
+    width: 150px;
+    height: 150px;
+  }
+
+  nav {
+    top: 190px;
+  }
+
   nav ul {
     row-gap: 40px;
+  }
+
+  .hero {
+    grid-template-rows: minmax(auto, 1fr);
   }
 
   .hero__text-content h1 {
